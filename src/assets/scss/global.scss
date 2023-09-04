@@ -54,6 +54,9 @@
   &--fz-12 {
     font-size: 12px;
   }
+  &--lh-130 {
+    line-height: 1.3;
+  }
 }
 
 .input {
@@ -222,6 +225,36 @@
 .money {
   &:after {
     content: '\e80c';
+  }
+}
+
+.star {
+  display: inline-flex;
+  align-items: center;
+
+  &:before{
+    content: '\e80f';
+    margin-bottom: 2px;
+    margin-right: 5px;
+    font-family: 'iconsfont';
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.star-mark {
+  display: inline-flex;
+  align-items: center;
+
+  &:after{
+    content: '\e80f';
+    margin-bottom: 2px;
+    margin-left: 3px;
+    font-family: 'iconsfont';
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
   }
 }
 

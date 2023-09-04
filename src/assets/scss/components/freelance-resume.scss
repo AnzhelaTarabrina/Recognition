@@ -1,0 +1,68 @@
+.freelance-resume {
+  padding: 30px 10px 24px 30px;
+  border-radius: 10px;
+  background: #FFF;
+
+  &__row {
+    display: flex;
+    line-height: 1.3;
+    &:nth-child(1) {
+      margin-bottom: 17px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__left {
+    padding-right: 10px;
+    flex: 0 0 210px;
+    
+    &--big {
+      flex: 0 0 240px;
+    }
+  }
+
+  &__center {
+    padding-right: 10px;
+    flex: 1 1 auto;
+  }
+
+  &__right {
+    flex: 0 0 112px;
+  }
+  
+  &__info {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    &:before {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  &__star {
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  &__center-item {
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+  }
+}
+
+@include media_max_width(1200px) {
+  .freelance-resume {
+    padding: 30px 10px 24px 15px;
+    &__left {
+      flex: 0 0 180px;
+    }
+  }
+}

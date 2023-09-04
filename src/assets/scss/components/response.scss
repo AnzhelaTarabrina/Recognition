@@ -1,0 +1,70 @@
+.response {
+  &__players {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px dashed #808080;
+
+    &-title {
+      flex: 0 0 120px;
+      padding-top: 5px;
+      padding-right: 5px;
+    }
+
+    &-body {
+      flex-grow: 1;
+    }
+
+    &-item {
+      display: flex;
+      &:not(:first-child) {
+        margin-top: 11px;
+      }
+    }
+  
+    &-user {
+      flex-grow: 1;
+      padding-right: 5px;
+    }
+  
+    &-btns {
+      flex: 0 0 240px;
+    }
+  }
+
+  &__body {
+    &-header {
+      margin: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-checkboxes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    &-item {
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &-pagination {
+      margin-top: 30px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__btns-list {
+    width: 250px;
+  }
+
+  &__btn {
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

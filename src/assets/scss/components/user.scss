@@ -45,6 +45,16 @@
       height: 53px;
     }
 
+    &--size-20 {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--size-30 {
+      width: 30px;
+      height: 30px;
+    }
+
     &--size-50 {
       width: 50px;
       height: 50px;
@@ -82,6 +92,10 @@
 
     &--black {
       color: #000;
+    }
+
+    &--gray {
+      color: $color-gray;
     }
   }
 

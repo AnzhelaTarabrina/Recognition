@@ -1,0 +1,24 @@
+.award-freelance {
+  padding-bottom: 16px;
+  display: flex;
+
+  &__user {
+    flex: 0 0 360px;
+  }
+
+  &__body {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__value {
+    flex: 0 0 120px;
+
+    &-item {
+      display: flex;
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+}

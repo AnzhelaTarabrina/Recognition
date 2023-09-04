@@ -84,6 +84,11 @@
     &--fixed {
       position: fixed;
     }
+
+    &--tasks {
+      right: 0;
+      top: 30px;
+    }
   }
 
   &__progress {
@@ -115,6 +120,18 @@
 
   &__order-form {
     padding: 75px 120px 85px;
+  }
+
+  &__resume-marks {
+    max-width: 480px;
+    padding: 80px 0 118px;
+    margin: 0 auto;
+  }
+
+  &__add-marks {
+    max-width: 480px;
+    padding: 80px 0 40px;
+    margin: 0 auto;
   }
 
   &--message {

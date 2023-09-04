@@ -1,0 +1,76 @@
+.freelance-add-task {
+  &__header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(245, 161, 0, 0.10) 0%, rgba(245, 161, 0, 0.10) 100%), #FFF;
+  
+    &-inner {
+      padding: 20px 30px 20px 0;
+      position: relative;
+      &--pb-15 {
+        padding-bottom: 15px;
+      }
+    }
+
+    &--white {
+      background: #fff;
+    }
+  }
+
+  &__breadcrumbs {
+    color: $color-gray;
+  }
+
+  &__title {
+    margin-top: 3px;
+    margin-bottom: 22px;
+  }
+
+  &__tabs-btns {
+    display: flex;
+  }
+
+  &__tabs-btn {
+    color: $color-primary;
+    text-decoration: underline;
+
+    &.tabs-btn--active {
+      color: #000;
+      text-decoration: none;
+    }
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  &__tabs-list {
+    margin-top: 160px;
+    margin-bottom: 70px;
+  }
+
+  &__inner {
+    max-width: 720px;
+  }
+
+  &__form {
+    margin-top: 120px;
+    margin-bottom: 80px;
+
+    &--tab {
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+
+  &__award {
+    &:not(:first-child) {
+      padding-top: 15px;
+      border-top: 1px dashed #808080;
+    }
+  }
+
+  &__pagination {
+    margin-top: 35px;
+  }
+}

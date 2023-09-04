@@ -1,0 +1,56 @@
+.admin-freelance {
+  padding: 40px 0 80px;
+
+  &__header {
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-buttom {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--mt-20 {
+        margin-top: 20px;
+      }
+    }
+
+    &-select {
+      flex: 0 0 240px;
+    }
+
+    &-checkboxes {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-search {
+      margin-top: 20px;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+    &--mt-20 {
+      margin-top: 20px;
+    }
+    &--mt-30 {
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 30px;
+    max-width: 720px;
+  }
+}

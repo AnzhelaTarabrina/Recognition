@@ -130,6 +130,12 @@
     }
   }
 
+  &--arrow-t-13 {
+    &:after {
+      top: 13px;
+    }
+  }
+
   &--no-arrow {
     &:after {
       display: none;

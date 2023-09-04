@@ -1,0 +1,29 @@
+.freelance-task {
+  padding: 14px 8px 14px 20px;
+  border-radius: 10px;
+  background: #FFF;
+  display: flex;
+  column-gap: 8px;
+  &__col {
+    flex: 0 0 114px;
+    line-height: 1.39;
+    &:nth-child(1) {
+      flex: 1 1 auto;
+    }
+    &:nth-child(2) {
+      flex: 0 0 230px;
+    }
+  }
+}
+
+@include media_max_width(1200px) {
+  .freelance-task {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    &__col {
+      &:nth-child(1) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}

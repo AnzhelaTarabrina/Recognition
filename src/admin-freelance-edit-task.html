@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<title>AmRecognition | Админ - Фриланс задачи</title>
+</head>
+
+<body class="body body--admin">
+	<main class="admin-main">
+		<div class="freelance-add-task">
+			<div class="freelance-add-task__header freelance-add-task__header--white">
+				<div class="container">
+					<div class="row">
+						<div class="freelance-add-task__inner mx-auto">
+							<div class="freelance-add-task__header-inner freelance-add-task__header-inner--pb-15">
+								<div class="breadcrumbs freelance-add-task__breadcrumbs">
+									<span class="breadcrumbs__link breadcrumbs__link--text">Фриланс</span>
+									<span class="breadcrumbs__link breadcrumbs__link--text">Задачи</span>
+									<span class="breadcrumbs__current">Работа с текстом</span>
+								</div>
+								<div class="freelance-add-task__title">Отредактировать серию интервью с сотрудниками ресторанов</div>
+								<div class="freelance-add-task__tabs-btns tabs-btns" data-tabs-name="edit-task">
+									<button
+										class="freelance-add-task__tabs-btn tabs-btn tabs-btn--active">Параметры</button>
+									<button class="freelance-add-task__tabs-btn tabs-btn">Отклики и исполнители</button>
+									<button class="freelance-add-task__tabs-btn tabs-btn">Вознаграждения</button>
+								</div>
+								<a href="admin-freelance-tasks.html"  class="icon icon-close-bold icon--danger popup__close popup__close--tasks"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="freelance-add-task__content">
+				<div class="container">
+					<div class="row">
+						<div class="freelance-add-task__inner mx-auto">
+							<div class="freelance-add-task__tabs-list tabs-list" data-tabs-name="edit-task">
+								<div class="tabs-item tabs-item--active">
+									<form class="create-form freelance-add-task__form freelance-add-task__form--tab" autocomplete="off">
+										<div class="create-form__group">
+											<span class="create-form__label create-form__label--size-33">Название задачи</span>
+											<div class="create-form__item create-form__item--size-66">
+												<input class="settings-input" type="text" value="Отредактировать серию интервью с сотрудниками ресторанов">
+											</div>
+										</div>
+										<div class="create-form__group">
+											<div class="create-form__item create-form__item--size-66">
+												<div class="select select--arrow-bold select--arrow-r-20 select--arrow-t-13">
+													<select class="select__field select__field--text-gray select__field--middle select__field--pl-20">
+														<option value="1">Работа с текстом</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="create-form__group">
+											<span class="create-form__label create-form__label--size-33">Описание</span>
+											<div class="create-form__item create-form__item--size-66">
+												<textarea class="settings-input settings-input--area create-form__area create-form__area--lh-160"
+													data-min-height="160">Описание. Регистрация на кибертурнир KFC GAMES уже открыта для тебя или твоей команды! Главный приз – полное обновление игрового сет-апа (компьютер, кресло, мышка, монитор, наушники, коврик, клавиатура) + призовой фонд более одного миллиона рублей.</textarea>
+											</div>
+										</div>
+										<div class="create-form__group">
+											<span class="create-form__label create-form__label--size-33">Требования</span>
+											<div class="create-form__item create-form__item--size-66">
+												<textarea class="settings-input settings-input--area create-form__area create-form__area--lh-160" data-min-height="100">
+Список требований:
+	• Первое
+	• Второе 
+	• Третье
+	• Результат на почту mail@mail.ru
+												</textarea>
+											</div>
+										</div>
+										<div class="create-form__group">
+											<div class="create-form__item create-form__item--size-66">
+												<label class="checkbox checkbox--gray">
+													<input class="checkbox__input" type="checkbox" name="pre-moderation" checked="">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text">Ссылка на портфолио внутри заявки</span>
+												</label>
+											</div>
+										</div>
+										<div class="create-form__group">
+											<span class="create-form__label create-form__label--size-33">Вознаграждение</span>
+											<div class="create-form__item create-form__item--size-66">
+												<textarea class="settings-input settings-input--area create-form__area create-form__area--lh-160"
+													data-min-height="160">Про вознаграждение. 500 коинов за интервью</textarea>
+											</div>
+										</div>
+										<div class="create-form__group">
+											<span class="create-form__label create-form__label--size-33">Тестовое задание</span>
+											<div class="create-form__item create-form__item--size-66">
+												<label class="checkbox">
+													<input class="checkbox__input" type="checkbox" name="pre-moderation" checked="">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text">Да</span>
+												</label>
+											</div>
+										</div>
+										<div class="create-form__group">
+											<div class="create-form__item create-form__item--size-66">
+												<textarea class="settings-input settings-input--area create-form__area create-form__area--lh-160"
+													data-min-height="160">Опишите тестовое задание</textarea>
+											</div>
+										</div>
+										<div class="create-form__group create-form__group--dashed create-form__group--mt-35">
+											<div class="create-form__label create-form__label--jc-start create-form__label--size-33">
+												<span class="text create-form__label-text">Ответственный менеджер</span>
+											</div>
+											<div class="create-form__item create-form__item--size-66">
+												<div class="create-form__elems create-form__elems--mb-10">
+													<div class="create-form__element">
+														<a class="link link--black create-form__element-text" href="admin-user.html">Кристина Казакова</a>
+													</div>
+													<div class="create-form__element">
+														<button class="icon icon-close-bold search__icon create-form__element-btn"></button>
+													</div>
+												</div>
+												<div class="create-form__elems create-form__elems--mb-10">
+													<div class="create-form__element">
+														<a class="link link--black create-form__element-text" href="admin-user.html">Анатолий Константиновский</a>
+													</div>
+													<div class="create-form__element">
+														<button class="icon icon-close-bold search__icon create-form__element-btn"></button>
+													</div>
+												</div>
+												<div class="create-form__elems create-form__elems--mb-10">
+													<div class="create-form__element">
+														<button class="link link--regular create-form__element-text"type="button">+ Добавить менеджера</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="create-form__group create-form__group--dashed create-form__group--mt-35">
+											<div class="create-form__item create-form__item--size-66">
+												<label class="checkbox">
+													<input class="checkbox__input" type="checkbox" name="pre-moderation" checked="">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text">Прием откликов</span>
+												</label>
+											</div>
+										</div>
+										<div class="create-form__group create-form__group--mt-35">
+											<div class="create-form__item create-form__item--full">
+												<div class="create-form__btns">
+													<button type="submit" class="btn btn--fz-18 create-form__btn create-form__btn--big create-form__btn-full">Сохранить изменения</button>
+												</div>
+											</div>
+										</div>
+										<div class="create-form__group create-form__group--mt-30">
+											<div class="create-form__item create-form__item--full">
+												<div class="create-form__btns">
+													<button type="submit" class="btn btn--round btn--transparent btn--color-primary btn--py-12 btn--full">Закрыть задачу</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="tabs-item">
+									<div class="response freelance-add-task__response">
+										<div class="response__players">
+											<div class="response__players-title">Выбранные исполнители</div>
+											<div class="response__players-body">
+												<div class="response__players-item">
+													<div class="user response__players-user">
+														<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+														<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+																Александровская</a>
+															<div class="text text--gray">Должность</div>
+															<div class="text text--gray">Подразделение</div>
+														</div>
+													</div>
+													<div class="response__players-btns">
+														<button class="link js-open-popup" data-popup-name="add-marks">Вознаграждение и оценка</button>
+														<button class="link">Удалить из списка</button>
+													</div>
+												</div>
+												<div class="response__players-item">
+													<div class="user response__players-user">
+														<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+														<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+																Александровская</a>
+															<div class="text text--gray">Должность</div>
+															<div class="text text--gray">Подразделение</div>
+														</div>
+													</div>
+													<div class="response__players-btns">
+														<button class="link js-open-popup" data-popup-name="add-marks">Вознаграждение и оценка</button>
+														<button class="link">Удалить из списка</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="response__body">
+											<div class="response__body-header">
+												<div class="response__body-title">Отклики</div>
+												<div class="response__body-checkboxes">
+													<label class="checkbox checkbox--icon">
+														<input class="checkbox__input" type="checkbox" name="users-type" checked="">
+														<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--star"></span>
+														<span class="text text--medium checkbox__text checkbox__text--small">Круто</span>
+													</label>
+													<label class="checkbox checkbox--icon">
+														<input class="checkbox__input" type="checkbox" name="users-type" checked="">
+														<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--bookmark"></span>
+														<span class="text text--medium checkbox__text checkbox__text--small">Интересно</span>
+													</label>
+													<label class="checkbox checkbox--icon">
+														<input class="checkbox__input" type="checkbox" name="users-type" checked="">
+														<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--minus"></span>
+														<span class="text text--medium checkbox__text checkbox__text--small">Не интересно</span>
+													</label>
+												</div>
+											</div>
+											<div class="response__body-list">
+												<div class="item-response response__body-item">
+													<div class="item-response__checkbox">
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" name="pre-moderation" checked="">
+															<span class="checkbox__switch"></span>
+														</label>
+													</div>
+													<div class="item-response__main">
+														<div class="item-response__main-top">
+															<div class="user item-response__main-user">
+																<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+																<div class="user__info user__info--lh-130"><a class="user__name" href="#">Александрина Александровская</a>
+																	<div class="text text--gray">Должность</div>
+																	<div class="text text--gray">Подразделение</div>
+																</div>
+															</div>
+															<div class="item-response__main-info">
+																<a href="#" class="link">Реализованные задачи (3)</a>
+																<div class="star item-response__main-star">3.9</div>
+																<button class="link js-open-popup"data-popup-name="freelance-see-resume">Смотреть резюме</button>
+															</div>
+														</div>
+														<div class="item-response__main-bottom">
+															<div class="text">Отклик</div>
+															<div class="italic text text--gray item-response__main-text">Постоянно ставлю перед собой новые вызовы, амбициозно двигаюсь вперед и улучшаю свои навыки каждый день.</div>
+															<div class="text">Тестовое задание</div>
+															<a href="" class="link">https://www.youtube.com/...</a>
+															<div class="rating-freelance item-response__rating">
+																<div class="rating-freelance__checkboxes">
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-1" checked>
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--star"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-1">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--bookmark"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-1">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--minus"></span>
+																	</label>
+																</div>
+																<div class="rating-freelance__user">
+																	<div class="user">
+																		<a class="user__avatar user__avatar--size-20" href="admin-user.html">
+																			<img src="assets/img/avatars/2.png" alt="">
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-response response__body-item">
+													<div class="item-response__checkbox">
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" name="pre-moderation">
+															<span class="checkbox__switch"></span>
+														</label>
+													</div>
+													<div class="item-response__main">
+														<div class="item-response__main-top">
+															<div class="user item-response__main-user">
+																<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+																<div class="user__info user__info--lh-130"><a class="user__name" href="#">Александрина Александровская</a>
+																	<div class="text text--gray">Должность</div>
+																	<div class="text text--gray">Подразделение</div>
+																</div>
+															</div>
+															<div class="item-response__main-info">
+																<a href="#" class="link">Реализованные задачи (3)</a>
+																<div class="star item-response__main-star">3.9</div>
+																<button class="link js-open-popup"data-popup-name="freelance-see-resume">Смотреть резюме</button>
+															</div>
+														</div>
+														<div class="item-response__main-bottom">
+															<div class="text">Отклик</div>
+															<div class="italic text text--gray item-response__main-text">Постоянно ставлю перед собой новые вызовы, амбициозно двигаюсь вперед и улучшаю свои навыки каждый день.</div>
+															<div class="text">Тестовое задание</div>
+															<a href="" class="link">https://www.youtube.com/...</a>
+															<div class="rating-freelance item-response__rating">
+																<div class="rating-freelance__checkboxes">
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-2" checked>
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--star"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-2">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--bookmark"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-2">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--minus"></span>
+																	</label>
+																</div>
+																<div class="rating-freelance__user">
+																	<div class="user">
+																		<a class="user__avatar user__avatar--size-20" href="admin-user.html">
+																			<img src="assets/img/avatars/2.png" alt="">
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-response response__body-item">
+													<div class="item-response__checkbox">
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" name="pre-moderation">
+															<span class="checkbox__switch"></span>
+														</label>
+													</div>
+													<div class="item-response__main">
+														<div class="item-response__main-top">
+															<div class="user item-response__main-user">
+																<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+																<div class="user__info user__info--lh-130"><a class="user__name" href="#">Александрина Александровская</a>
+																	<div class="text text--gray">Должность</div>
+																	<div class="text text--gray">Подразделение</div>
+																</div>
+															</div>
+															<div class="item-response__main-info">
+																<a href="#" class="link">Реализованные задачи (3)</a>
+																<div class="star item-response__main-star">3.9</div>
+																<button class="link js-open-popup"data-popup-name="freelance-see-resume">Смотреть резюме</button>
+															</div>
+														</div>
+														<div class="item-response__main-bottom">
+															<div class="text">Отклик</div>
+															<div class="italic text text--gray item-response__main-text">Постоянно ставлю перед собой новые вызовы, амбициозно двигаюсь вперед и улучшаю свои навыки каждый день.</div>
+															<div class="text">Тестовое задание</div>
+															<a href="" class="link">https://www.youtube.com/...</a>
+															<div class="rating-freelance item-response__rating">
+																<div class="rating-freelance__checkboxes">
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-3" checked>
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--star"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-3">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--bookmark"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-3">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--minus"></span>
+																	</label>
+																</div>
+																<div class="rating-freelance__user">
+																	<div class="user">
+																		<a class="user__avatar user__avatar--size-20" href="admin-user.html">
+																			<img src="assets/img/avatars/2.png" alt="">
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-response response__body-item">
+													<div class="item-response__checkbox">
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" name="pre-moderation" checked="">
+															<span class="checkbox__switch"></span>
+														</label>
+													</div>
+													<div class="item-response__main">
+														<div class="item-response__main-top">
+															<div class="user item-response__main-user">
+																<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+																<div class="user__info user__info--lh-130"><a class="user__name" href="#">Александрина Александровская</a>
+																	<div class="text text--gray">Должность</div>
+																	<div class="text text--gray">Подразделение</div>
+																</div>
+															</div>
+															<div class="item-response__main-info">
+																<a href="#" class="link">Реализованные задачи (3)</a>
+																<div class="star item-response__main-star">3.9</div>
+																<button class="link js-open-popup"data-popup-name="freelance-see-resume">Смотреть резюме</button>
+															</div>
+														</div>
+														<div class="item-response__main-bottom">
+															<div class="text">Отклик</div>
+															<div class="italic text text--gray item-response__main-text">Постоянно ставлю перед собой новые вызовы, амбициозно двигаюсь вперед и улучшаю свои навыки каждый день.</div>
+															<div class="text">Тестовое задание</div>
+															<a href="" class="link">https://www.youtube.com/...</a>
+															<div class="rating-freelance item-response__rating">
+																<div class="rating-freelance__checkboxes">
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-4" checked>
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--star"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-4">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--bookmark"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-4">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--minus"></span>
+																	</label>
+																</div>
+																<div class="rating-freelance__user">
+																	<div class="user">
+																		<a class="user__avatar user__avatar--size-20" href="admin-user.html">
+																			<img src="assets/img/avatars/2.png" alt="">
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-response response__body-item">
+													<div class="item-response__checkbox">
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" name="pre-moderation">
+															<span class="checkbox__switch"></span>
+														</label>
+													</div>
+													<div class="item-response__main">
+														<div class="item-response__main-top">
+															<div class="user item-response__main-user">
+																<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+																<div class="user__info user__info--lh-130"><a class="user__name" href="#">Александрина Александровская</a>
+																	<div class="text text--gray">Должность</div>
+																	<div class="text text--gray">Подразделение</div>
+																</div>
+															</div>
+															<div class="item-response__main-info">
+																<a href="#" class="link">Реализованные задачи (3)</a>
+																<div class="star item-response__main-star">3.9</div>
+																<button class="link js-open-popup"data-popup-name="freelance-see-resume">Смотреть резюме</button>
+															</div>
+														</div>
+														<div class="item-response__main-bottom">
+															<div class="text">Отклик</div>
+															<div class="italic text text--gray item-response__main-text">Постоянно ставлю перед собой новые вызовы, амбициозно двигаюсь вперед и улучшаю свои навыки каждый день.</div>
+															<div class="text">Тестовое задание</div>
+															<a href="" class="link">https://www.youtube.com/...</a>
+															<div class="rating-freelance item-response__rating">
+																<div class="rating-freelance__checkboxes">
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-5" checked>
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--star"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-5">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--bookmark"></span>
+																	</label>
+																	<label class="checkbox checkbox--icon">
+																		<input class="checkbox__input" type="radio" name="users-type-5">
+																		<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--minus"></span>
+																	</label>
+																</div>
+																<div class="rating-freelance__user">
+																	<div class="user">
+																		<a class="user__avatar user__avatar--size-20" href="admin-user.html">
+																			<img src="assets/img/avatars/2.png" alt="">
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="pagination response__body-pagination">
+												<div class="pagination__list">
+													<span class="pagination__active">1</span>
+													<a class="pagination__link" href="#">2</a>
+													<a class="pagination__link" href="#">3</a>
+													<a class="pagination__link" href="#">4</a>
+													<a class="pagination__link" href="#">5</a>
+													<a class="pagination__link" href="#">6</a>
+													<a class="pagination__link" href="#">7</a>
+													<a class="pagination__link" href="#">8</a>
+													<a class="pagination__link" href="#">9</a>
+													<a class="pagination__link" href="#">10</a>
+													<a class="pagination__link" href="#">11</a>
+													<a class="pagination__link" href="#">12</a>
+													<a class="pagination__link" href="#">13</a>
+													<a class="pagination__link" href="#">14</a>
+													<a class="pagination__link" href="#">15</a>
+													<a class="pagination__link" href="#">16</a>
+													<a class="pagination__link" href="#">17</a>
+													<a class="pagination__link" href="#">18</a>
+													<a class="pagination__link" href="#">19</a>
+												</div>
+											</div>
+											<div class="fixed-btns response__btns">
+												<div class="fixed-btns__list response__btns-list">
+													<buttton class="btn btn--full btn--low fixed-btns__btn response__btn">Добавить выбранных (2) <br> в исполнители</buttton>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-item">
+									<div class="freelance-add-task__awards">
+										<div class="award-freelance freelance-add-task__award">
+											<div class="user award-freelance__user">
+												<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+												<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+														Александровская</a>
+													<div class="text text--gray">Должность</div>
+													<div class="text text--gray">Подразделение</div>
+												</div>
+											</div>
+											<div class="award-freelance__body">
+												<div class="award-freelance__value">
+													<div class="prize award-freelance__value-item">2500</div>
+													<div class="star-mark award-freelance__value-item">5</div>
+												</div>
+												<div class="award-freelance__text">
+													<div class="text">Кристина Казакова</div>
+												</div>
+											</div>
+										</div>
+										<div class="award-freelance freelance-add-task__award">
+											<div class="user award-freelance__user">
+												<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+												<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+														Александровская</a>
+													<div class="text text--gray">Должность</div>
+													<div class="text text--gray">Подразделение</div>
+												</div>
+											</div>
+											<div class="award-freelance__body">
+												<div class="award-freelance__value">
+													<div class="prize award-freelance__value-item">2500</div>
+													<div class="star-mark award-freelance__value-item">5</div>
+												</div>
+												<div class="award-freelance__text">
+													<div class="text">Кристина Казакова</div>
+												</div>
+											</div>
+										</div>
+										<div class="award-freelance freelance-add-task__award">
+											<div class="user award-freelance__user">
+												<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+												<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+														Александровская</a>
+													<div class="text text--gray">Должность</div>
+													<div class="text text--gray">Подразделение</div>
+												</div>
+											</div>
+											<div class="award-freelance__body">
+												<div class="award-freelance__value">
+													<div class="prize award-freelance__value-item">2500</div>
+													<div class="star-mark award-freelance__value-item">5</div>
+												</div>
+												<div class="award-freelance__text">
+													<div class="text">Кристина Казакова</div>
+												</div>
+											</div>
+										</div>
+										<div class="award-freelance freelance-add-task__award">
+											<div class="user award-freelance__user">
+												<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+												<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+														Александровская</a>
+													<div class="text text--gray">Должность</div>
+													<div class="text text--gray">Подразделение</div>
+												</div>
+											</div>
+											<div class="award-freelance__body">
+												<div class="award-freelance__value">
+													<div class="prize award-freelance__value-item">2500</div>
+													<div class="star-mark award-freelance__value-item">5</div>
+												</div>
+												<div class="award-freelance__text">
+													<div class="text">Кристина Казакова</div>
+												</div>
+											</div>
+										</div>
+										<div class="award-freelance freelance-add-task__award">
+											<div class="user award-freelance__user">
+												<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+												<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+														Александровская</a>
+													<div class="text text--gray">Должность</div>
+													<div class="text text--gray">Подразделение</div>
+												</div>
+											</div>
+											<div class="award-freelance__body">
+												<div class="award-freelance__value">
+													<div class="prize award-freelance__value-item">2500</div>
+													<div class="star-mark award-freelance__value-item">5</div>
+												</div>
+												<div class="award-freelance__text">
+													<div class="text">Кристина Казакова</div>
+												</div>
+											</div>
+										</div>
+										<div class="award-freelance freelance-add-task__award">
+											<div class="user award-freelance__user">
+												<a class="user__avatar user__avatar--story user__avatar--size-50" href="#"><img src="assets/img/avatars/2.png" alt=""></a>
+												<div class="user__info user__info--lh-130"><a class="user__name" href="#">Мария
+														Александровская</a>
+													<div class="text text--gray">Должность</div>
+													<div class="text text--gray">Подразделение</div>
+												</div>
+											</div>
+											<div class="award-freelance__body">
+												<div class="award-freelance__value">
+													<div class="prize award-freelance__value-item">2500</div>
+													<div class="star-mark award-freelance__value-item">5</div>
+												</div>
+												<div class="award-freelance__text">
+													<div class="text">Кристина Казакова</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="pagination freelance-add-task__pagination">
+										<div class="pagination__list">
+											<span class="pagination__active">1</span>
+											<a class="pagination__link" href="#">2</a>
+											<a class="pagination__link" href="#">3</a>
+											<a class="pagination__link" href="#">4</a>
+											<a class="pagination__link" href="#">5</a>
+											<a class="pagination__link" href="#">6</a>
+											<a class="pagination__link" href="#">7</a>
+											<a class="pagination__link" href="#">8</a>
+											<a class="pagination__link" href="#">9</a>
+											<a class="pagination__link" href="#">10</a>
+											<a class="pagination__link" href="#">11</a>
+											<a class="pagination__link" href="#">12</a>
+											<a class="pagination__link" href="#">13</a>
+											<a class="pagination__link" href="#">14</a>
+											<a class="pagination__link" href="#">15</a>
+											<a class="pagination__link" href="#">16</a>
+											<a class="pagination__link" href="#">17</a>
+											<a class="pagination__link" href="#">18</a>
+											<a class="pagination__link" href="#">19</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="popup popup--admin freelance-see-resume" data-popup-name="freelance-see-resume">
+		<div class="popup__content freelance-see-resume__content">
+			<div class="container">
+				<div class="row">
+					<div class="freelance-resume freelance-see-resume__resume">
+						<div class="freelance-resume__row">
+							<div class="freelance-resume__left freelance-resume__left--big">
+								<div class="user">
+									<a class="user__avatar user__avatar--story" href="admin-user.html">
+										<img src="assets/img/avatars/2.png" alt="">
+									</a>
+									<div class="user__info">
+										<a class="user__name" href="admin-user.html">Мария <br> Александровская</a>
+									</div>
+								</div>
+							</div>
+							<div class="freelance-resume__center">
+								<p class="text">Менеджер <br> KFC Гражданский проспект</p>
+							</div>
+							<div class="freelance-resume__right"></div>
+						</div>
+						<div class="freelance-resume__row">
+							<div class="freelance-resume__left freelance-resume__left--big">
+								<div class="text text--gray">Резюме: <br> Дизайн и иллюстрация</div>
+							</div>
+							<div class="freelance-resume__center">
+								<div class="italic freelance-resume__text">Постоянно ставлю перед собой новые вызовы, амбициозно двигаюсь вперед</div>
+								<a href="" class="link">https://www.youtube.com/...</a>
+							</div>
+							<div class="freelance-resume__right">
+								<button class="link js-open-popup" data-popup-name="resume-marks" >Оценки (3)</button>
+								<div class="star freelance-resume__star">3.9</div>
+								<div class="rating-freelance freelance-resume__rating">
+									<div class="rating-freelance__checkboxes">
+										<label class="checkbox checkbox--icon">
+											<input class="checkbox__input" type="radio" name="users-type-1" checked>
+											<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--star"></span>
+										</label>
+										<label class="checkbox checkbox--icon">
+											<input class="checkbox__input" type="radio" name="users-type-1">
+											<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--bookmark"></span>
+										</label>
+										<label class="checkbox checkbox--icon">
+											<input class="checkbox__input" type="radio" name="users-type-1">
+											<span class="checkbox__switch checkbox__switch--small checkbox__switch--shadow-inset checkbox__switch--minus"></span>
+										</label>
+									</div>
+									<div class="rating-freelance__user">
+										<div class="user">
+											<a class="user__avatar user__avatar--size-20" href="admin-user.html">
+												<img src="assets/img/avatars/2.png" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="freelance-resume__row">
+							<div class="freelance-resume__left freelance-resume__left--big">
+								<p class="text text--gray">Комментарии</p>
+							</div>
+							<div class="freelance-resume__center">
+								<div class="freelance-resume__center-item">
+									<div class="text">Кристина Казакова:</div>
+									<div class="text">Не может тратить больше 3 часов в неделю</div>
+								</div>
+								<div class="freelance-resume__center-item">
+									<div class="text">Иван Иванов:</div>
+									<div class="text">Не отвечает на сообщения</div>
+								</div>
+							</div>
+							<div class="freelance-resume__right"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="icon icon-close-bold icon--danger popup__close popup__close--offset-20 js-close-popup"></button>
+		</div>
+	</div>
+	<div class="popup" data-popup-name="resume-marks">
+		<div class="popup__content">
+			<div class="resume-marks popup__resume-marks">
+				<div class="breadcrumbs resume-marks__breadcrumbs">
+					<span class="breadcrumbs__link breadcrumbs__link--text">Анатолий Константиновский</span>
+					<span class="breadcrumbs__link breadcrumbs__link--text">Дизайн и иллюстрация</span>
+					<span class="breadcrumbs__current">Оценки за задачи</span>
+				</div>
+				<div class="resume-marks__list">
+					<div class="resume-marks__item">
+						<div class="resume-marks__body">
+							<div class="text">Ретушь фотографий с People Meeting</div>
+							<div class="text text--gray">12.07.2023</div>
+						</div>
+						<div class="resume-marks__star">
+							<div class="star">4</div>
+						</div>
+					</div>
+					<div class="resume-marks__item">
+						<div class="resume-marks__body">
+							<div class="text">Ретушь фотографий с People Meeting</div>
+							<div class="text text--gray">18.06.2023</div>
+						</div>
+						<div class="resume-marks__star">
+							<div class="star">5</div>
+						</div>
+					</div>
+					<div class="resume-marks__item">
+						<div class="resume-marks__body">
+							<div class="text">Ретушь фотографий с новогодней вечеринкиg</div>
+							<div class="text text--gray">14.01.2023</div>
+						</div>
+						<div class="resume-marks__star">
+							<div class="star">4</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="icon icon-close-bold icon--danger popup__close popup__close--offset-20 js-close-popup"></button>
+		</div>
+	</div>
+	<div class="popup" data-popup-name="add-marks">
+		<div class="popup__content">
+			<form class="add-marks popup__add-marks" autocomplete="off">
+				<div class="add-marks__header">
+					<div class="text">Задача: Отредактировать серию интервью с сотрудниками</div>
+					<div class="text">Исполнитель: Анатолий Иванов</div>
+					<div class="text">Вознаграждение и оценка</div>
+				</div>
+				<div class="add-marks__group">
+					<div class="add-marks__input-box">
+						<input class="settings-input settings-input--px-10 settings-input--py-5 add-marks__input" type="number" value="2500">
+						<span class="prize add-marks__input-text"></span>
+					</div>
+					<div class="add-marks__input-box">
+						<input class="settings-input settings-input--px-10 settings-input--py-5 add-marks__input" type="number" value="5">
+						<span class="star-mark add-marks__input-text"></span>
+					</div>
+				</div>
+				<div class="add-marks__text">
+					<div class="text">Прошлые вознаграждения суммарно: 1000 ам</div>
+					<div class="text">Последнее: 14.07.2023</div>
+				</div>
+				<div class="add-marks__info">
+					<div class="italic text text--gray">Про вознаграждение из описания задачи. 500 коинов за интервью, плюс бейджик</div>
+				</div>
+				<div class="add-marks__btns">
+					<button class="btn btn--full btn--py-12 add-marks__btn">Отправить вознаграждение</button>
+					<button class="btn btn--full btn--py-12 btn--transparent btn--color-danger add-marks__btn">Отмена</button>
+				</div>
+			</form>
+			<button class="icon icon-close-bold icon--danger popup__close popup__close--offset-20 js-close-popup"></button>
+		</div>
+	</div>
+</body>
+
+</html>

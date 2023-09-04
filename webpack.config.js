@@ -107,6 +107,11 @@ const htmlPageNames = [
 	'admin-contest-winners',
 	'admin-contest-archive',
 	'admin-contest-archive-winners',
+	'admin-freelance-services',
+	'admin-freelance-resume',
+	'admin-freelance-tasks',
+	'admin-freelance-tasks-archive',
+	'admin-freelance-edit-task',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

@@ -104,6 +104,10 @@
     &--big {
       flex: 0 0 85.75%;
     }
+
+    &--size-66 {
+      flex: 0 0 66.666%;
+    }
   }
 
   &__label {
@@ -145,6 +149,10 @@
 
     &--minh-auto {
       min-height: auto;
+    }
+
+    &--size-33 {
+      flex: 0 0 33.333%;
     }
   }
 
@@ -197,6 +205,10 @@
     &--py-12 {
       padding-top: 12px;
       padding-bottom: 12px;
+    }
+
+    &--lh-160 {
+      line-height: 1.6;
     }
   }
 

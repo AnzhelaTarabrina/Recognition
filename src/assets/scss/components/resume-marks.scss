@@ -1,0 +1,19 @@
+.resume-marks {
+  &__breadcrumbs {
+    margin-bottom: 38px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  &__body {
+    line-height: 1.3;
+  }
+}
+

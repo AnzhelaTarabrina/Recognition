@@ -1,0 +1,9 @@
+.rating-freelance {
+  display: flex;
+  align-items: center;
+
+  &__checkboxes {
+    display: inline-flex;
+    gap: 10px;
+  }
+}
