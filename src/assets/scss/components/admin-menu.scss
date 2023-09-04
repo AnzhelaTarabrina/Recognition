@@ -57,6 +57,18 @@
       color: $color-gray;
       cursor: default;
     }
+
+    &--arrow-right {
+      text-align: right;
+      span {
+        display: inline-flex;
+        &:after {
+          content: "→";
+          margin-top: -2px;
+          margin-left: 3px;
+        }
+      }
+    }
   }
 
   &__sublist {
