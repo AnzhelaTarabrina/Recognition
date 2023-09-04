@@ -112,6 +112,10 @@ const htmlPageNames = [
 	'admin-freelance-tasks',
 	'admin-freelance-tasks-archive',
 	'admin-freelance-edit-task',
+	'admin-freelance-task-archive',
+	'moderator-freelance-resume',
+	'moderator-freelance-tasks',
+	'moderator-freelance-tasks-archive',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
