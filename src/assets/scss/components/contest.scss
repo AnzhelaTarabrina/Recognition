@@ -1,0 +1,144 @@
+.contest {
+  padding-bottom: 80px;
+  
+  &__breadcrumbs {
+    margin-bottom: 6px;
+  }
+
+  &__name {
+    display: none;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $color-primary;
+  }
+
+  &__date {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $color-gray;
+  }
+
+  &__img {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    max-width: 80%;
+
+    &--mt-30 {
+      margin-top: 30px;
+    }
+  }
+
+  &__awards {
+    margin-top: 25px;
+
+    &--mt-35 {
+      margin-top: 35px;
+    }
+
+    &--mt-15 {
+      margin-top: 15px;
+    }
+  }
+
+  &__award {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &-img {
+      margin-right: 12px;
+    }
+    
+    &-info {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+
+  &__user {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  &__info {
+    margin-top: 25px;
+
+    &-title {
+      margin-bottom: 6px;
+    }
+
+    &--mt-18 {
+      margin-top: 18px;
+    }
+  }
+
+  &__users {
+    margin-top: 35px;
+
+    &-title {
+      margin-bottom: 13px;
+    }
+
+    &-item {
+      display: flex;
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+
+    &--mt-18 {
+      margin-top: 18px;
+    }
+  }
+
+  &__category {
+    margin-top: 33px;
+
+    &-title {
+      margin-bottom: 8px;
+    }
+
+    &--mt-25 {
+      margin-top: 25px;
+    }
+  }
+
+  &__applications {
+    margin-top: 24px;
+  }
+}
+
+@include media_max_width(680px) {
+  .contest {
+    padding: 80px 0 30px;
+
+    &__breadcrumbs {
+      display: none;
+    }
+
+    &__name {
+      display: block;
+    }
+
+    &__img {
+      margin-top: 0;
+      margin-bottom: 16px;
+      max-width: 100%;
+
+      &--mt-30 {
+        margin-top: 15px;
+      }
+    }
+  }
+}

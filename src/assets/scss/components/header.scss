@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  background: $color-gradient-primary;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navbar {
+    margin-left: auto;
+  }
+}
+
+body.body--desktop .header {
+  min-width: $body-desktop-width;
+}
+
+@include media_max_width(680px) {
+  .header {
+    bottom: 0;
+    width: 100%;
+  
+    &__container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    &__logo {
+      display: none;
+    }
+  
+    &__navbar {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}

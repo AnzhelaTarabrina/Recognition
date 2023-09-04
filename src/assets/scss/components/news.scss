@@ -1,0 +1,34 @@
+.news {
+  padding-bottom: 50px;
+
+  &__section-header {
+    margin-bottom: 27px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .news {
+    padding: 70px 0;
+
+    &__section-header {
+      display: none;
+    }
+
+    &__list {
+      margin: 0 auto;
+      max-width: 360px;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+}

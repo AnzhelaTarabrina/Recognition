@@ -1,0 +1,60 @@
+.order-form {
+  padding: 75px 120px 80px;
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 17px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 6px;
+    line-height: 1.29;
+  }
+
+  &__input {
+    text-align: center;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+
+  &__range {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+
+    &-separate {
+      padding: 0 7px;
+    }
+  }
+
+  &__area {
+    margin-top: 16px;
+    padding: 11px 20px;
+  }
+
+  &__text-content {
+    font-size: 14px;
+    line-height: 1.29;
+    
+    &:not(:first-child) {
+      margin-top: 23px;
+    }
+  }
+
+  &--upload {
+    padding-bottom: 90px;
+  }
+
+  &--notification {
+    padding-top: 70px;
+    padding-bottom: 88px;
+  }
+}

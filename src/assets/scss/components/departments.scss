@@ -1,0 +1,64 @@
+.departments {
+  padding: 80px 0 90px;
+
+  &__selects {
+    display: flex;
+  }
+
+  &__select {
+    flex: 1 1 100%;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  &__search {
+    margin-top: 20px;
+  }
+
+  &__list {
+    margin-top: 50px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    &-text {
+      margin-right: 10px;
+      flex: 0 0 calc(50% - 70px);
+    }
+
+    &-select {
+      margin-left: 10px;
+      flex: 0 0 120px;
+    }
+  }
+
+  &__choice-btn {
+    padding: 5px 10px 7px;
+    flex: 0 0 calc(50% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    text-align: left;
+    line-height: 1.29;
+
+    &:after {
+      content: '\e805';
+      font-family: 'iconsfont';
+      font-size: 8px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__pagination {
+    margin-top: 50px;
+  }
+}

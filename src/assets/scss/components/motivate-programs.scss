@@ -1,0 +1,26 @@
+.motivate-programs {
+  padding: 40px 0 100px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--start {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
+
+  &__tabs {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.badge-form {
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    &-btn {
+      margin-left: auto;
+      padding: 12px;
+      min-width: 120px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+      border-radius: 30px;
+    }
+  }
+
+  &__type {
+    width: 240px;
+  }
+
+  &__input {
+    width: 480px;
+    margin-left: auto;
+  }
+
+  &__value {
+    width: 240px;
+  }
+
+  &__file-field {
+    margin-left: auto;
+  }
+
+  &__btns {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  &__btn {
+    flex: 1 1 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    &--submit {
+      margin-top: 60px;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__select {
+    margin-left: auto;
+    width: 120px;
+  }
+}

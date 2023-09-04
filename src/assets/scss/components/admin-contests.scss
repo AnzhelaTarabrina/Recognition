@@ -1,0 +1,13 @@
+.admin-contests {
+  padding: 40px 0;
+  
+  &__list {
+    margin-top: 40px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+}

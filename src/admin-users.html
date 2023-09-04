@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<title>AmRecognition | Админ - Пользователи</title>
+</head>
+
+<body class="body body--admin">
+	<main class="admin-main">
+		<div class="admin-container">
+			<div class="row">
+				<div class="col-3">
+					<div class="admin-navbar">
+						<a class="logo admin-navbar__logo" href="admin-updates.html">
+							<img class="logo__img" src="assets/img/logo.svg" alt="">
+						</a>
+						<nav class="admin-menu">
+							<ul class="admin-menu__list">
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-updates.html">
+										<span>Обновления</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-motivation-programs.html">
+										<span>Программы мотивации</span>
+									</a>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Пользователи</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-appeals.html">
+												<span>Обращения</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub admin-menu__link--active"
+												href="#">
+												<span>Список пользователей</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub"
+												href="admin-departments.html">
+												<span>Департаменты rst</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Департаменты ops</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Лимиты признания</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub"
+												href="admin-special-accrual.html">
+												<span>Специальное начисление</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Разделы</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-catalog.html">
+												<span>Каталог товаров</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-orders.html">
+												<span>Заказы</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Новости</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-badges.html">
+												<span>Бейджи</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Статистика</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Статистика признаний</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Годовщины сотрудников</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Годовщины ресторанов </span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Квартальные начисления </span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>SamaShop месячный баланс</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link admin-menu__link--danger" href="#">
+										<span>Выход</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-8 col-xl-7 mx-auto">
+					<div class="users">
+						<div class="users__header">
+							<div class="users__selects">
+								<div class="select select--text-black users__select" data-select-text="↓">
+									<select class="select__field">
+										<option value="1">Все должности</option>
+										<option value="2">Должность 1</option>
+										<option value="3">Должность 2</option>
+									</select>
+								</div>
+								<div class="select select--text-black users__select" data-select-text="↓">
+									<select class="select__field">
+										<option value="1">Все регионы</option>
+										<option value="2">Регион 1</option>
+										<option value="2">Регион 2</option>
+									</select>
+								</div>
+								<div class="select select--text-black users__select" data-select-text="↓">
+									<select class="select__field">
+										<option value="1">Все таланты</option>
+										<option value="2">Кулинария</option>
+										<option value="3">Съемка фото и видео</option>
+										<option value="3">Обработка фотографий</option>
+									</select>
+								</div>
+							</div>
+							<div class="users__header-bottom">
+								<label class="checkbox users__header-checkbox">
+									<input class="checkbox__input" type="checkbox" name="users-type" checked="">
+									<span class="checkbox__switch"></span>
+									<span class="text text--small text--medium checkbox__text">Неактивные
+										пользователи</span>
+								</label>
+								<form class="search users__search" autocomplete="off">
+									<input class="search__input" type="text" placeholder="Имя или подразделение">
+									<button class="search__btn search__btn--submit">
+										<span class="icon icon-search search__icon"></span>
+									</button>
+									<button type="button" class="search__btn search__btn--clear">
+										<span class="icon icon-close-bold search__icon"></span>
+									</button>
+								</form>
+							</div>
+						</div>
+
+						<table class="users-table users__table">
+							<thead>
+								<tr>
+									<th>Имя</th>
+									<th>Должность/ <br> подразделение</th>
+									<th>Расходный <br> кошелек</th>
+									<th>Запас <br> признания</th>
+									<th>Дополнительно</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Редактировать</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Редактировать</button>
+									</td>
+									<td>Фриланс-менеджер</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td></td>
+								</tr>
+								<tr class="users-table__inactive">
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td class="users-table__activate">
+										<div class="text text--danger text--inactive">С 1.09.2022</div>
+										<button class="text text--danger js-open-popup" data-popup-name="merge-user">Объединить</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td></td>
+								</tr>
+								<tr class="users-table__inactive">
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<span class="text text--danger">Неактивен <br> с 1.09.2022</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+										<a class="user" href="admin-user.html">
+											<div class="user__avatar user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+											<span class="user__name">Мария <br> Александровская</span>
+										</a>
+									</td>
+									<td>Менеджер <br> KFC Просвещения</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td>
+										<div class="price users-table__price">1500</div>
+										<button class="link js-open-popup"
+											data-popup-name="wallet-edit">Пополнить</button>
+									</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="pagination users__pagination">
+							<div class="pagination__list">
+								<span class="pagination__active">1</span>
+								<a class="pagination__link" href="#">2</a>
+								<a class="pagination__link" href="#">3</a>
+								<a class="pagination__link" href="#">4</a>
+								<a class="pagination__link" href="#">5</a>
+								<a class="pagination__link" href="#">6</a>
+								<a class="pagination__link" href="#">7</a>
+								<a class="pagination__link" href="#">8</a>
+								<a class="pagination__link" href="#">9</a>
+								<a class="pagination__link" href="#">10</a>
+								<a class="pagination__link" href="#">11</a>
+								<a class="pagination__link" href="#">12</a>
+								<a class="pagination__link" href="#">13</a>
+								<a class="pagination__link" href="#">14</a>
+								<a class="pagination__link" href="#">15</a>
+								<a class="pagination__link" href="#">16</a>
+								<a class="pagination__link" href="#">17</a>
+								<a class="pagination__link" href="#">18</a>
+								<a class="pagination__link" href="#">19</a>
+								<a class="pagination__link" href="#">+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="popup" data-popup-name="wallet-edit">
+		<div class="popup__content">
+			<form class="wallet-edit popup__wallet-edit" autocomplete="off">
+				<div class="wallet-edit__header">
+					<div class="user wallet-edit__user">
+						<a class="user__avatar user__avatar--story" href="admin-user.html">
+							<img src="assets/img/avatars/2.png" alt="">
+						</a>
+						<div class="user__info">
+							<a class="user__name" href="admin-user.html">Мария <br> Александровская</a>
+						</div>
+					</div>
+					<div class="wallet-edit__user-position">Менеджер <br> KFC Просвещения</div>
+				</div>
+				<div class="wallet-edit__title">Редактировать баланс</div>
+				<div class="wallet-edit__group">
+					<div class="wallet-edit__item">
+						<div class="wallet-edit__field">
+							<input class="settings-input settings-input--small wallet-edit__input" type="text"
+								value="2500">
+							<div class="wallet-edit__label">Расходный кошелек</div>
+						</div>
+						<div class="text text--danger wallet-edit__value">-500</div>
+					</div>
+					<div class="wallet-edit__item">
+						<div class="wallet-edit__field">
+							<input class="settings-input settings-input--small wallet-edit__input" type="text"
+								value="2000">
+							<div class="wallet-edit__label">Запас признания</div>
+						</div>
+						<div class="text text--success wallet-edit__value">+500</div>
+					</div>
+				</div>
+				<button class="btn btn--small wallet-edit__btn wallet-edit__btn--submit">Сохранить</button>
+				<button type="button" class="btn btn--transparent btn--color-danger wallet-edit__btn">Отмена</button>
+			</form>
+			<button
+				class="icon icon-close-bold icon--danger popup__close popup__close--offset-20 js-close-popup"></button>
+		</div>
+	</div>
+
+	<div class="popup popup--full popup--admin" data-popup-name="merge-user">
+		<div class="popup__content">
+			<div class="admin-container">
+				<div class="row">
+					<div class="col-8 mx-auto">
+						<form class="merge-user" autocomplete="off">
+							<div class="merge-user__box">
+								<div class="merge-user__content">
+									<div class="merge-user__header">
+										<div class="text text--bold merge-user__title">Объединить <br> пользователя
+										</div>
+										<div class="user merge-user__profile">
+											<div class="user__info user__info--right">
+												<a class="user__name user__name--text-14 user__name--black"
+													href="admin-user.html">
+													Мария Александровская <br>
+													Менеджер KFC Просвещения
+													<div class="text text--danger">Неактивен с 21.02.2023</div>
+												</a>
+											</div>
+											<div class="user__avatar user__avatar--size-50 user__avatar--story">
+												<img src="assets/img/avatars/2.png" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="search merge-user__search" autocomplete="off">
+										<input class="search__input search__input--black search__input--middle"
+											type="text" value="Мария Иванова">
+										<button class="search__btn search__btn--r-20 search__btn--submit">
+											<span class="icon icon-search search__icon"></span>
+										</button>
+										<button type="button" class="search__btn search__btn--r-20 search__btn--clear">
+											<span class="icon icon-close-bold search__icon"></span>
+										</button>
+									</div>
+									<div class="merge-user__list">
+										<div class="merge-user__item">
+											<label class="checkbox merge-user__item-checkbox">
+												<input class="checkbox__input" type="radio" name="user">
+												<span class="checkbox__switch checkbox__switch--big"></span>
+											</label>
+											<div class="user merge-user__item-profile">
+												<div class="user__avatar">
+													<img src="assets/img/avatars/2.png" alt="">
+												</div>
+												<div class="user__info">
+													<a class="user__name" href="admin-user.html">Мария Иванова</a>
+												</div>
+												<span class="user__addition text text--gray">В системе с
+													05.03.2023</span>
+											</div>
+										</div>
+										<div class="merge-user__item">
+											<label class="checkbox merge-user__item-checkbox">
+												<input class="checkbox__input" type="radio" name="user" checked>
+												<span class="checkbox__switch checkbox__switch--big"></span>
+											</label>
+											<div class="user merge-user__item-profile">
+												<div class="user__avatar">
+													<img src="assets/img/avatars/2.png" alt="">
+												</div>
+												<div class="user__info">
+													<a class="user__name" href="admin-user.html">Мария Иванова</a>
+												</div>
+												<span class="user__addition text text--gray">В системе с
+													05.03.2023</span>
+											</div>
+										</div>
+										<div class="merge-user__item">
+											<label class="checkbox merge-user__item-checkbox">
+												<input class="checkbox__input" type="radio" name="user">
+												<span class="checkbox__switch checkbox__switch--big"></span>
+											</label>
+											<div class="user merge-user__item-profile">
+												<div class="user__avatar">
+													<img src="assets/img/avatars/2.png" alt="">
+												</div>
+												<div class="user__info">
+													<a class="user__name" href="admin-user.html">Мария Иванова</a>
+												</div>
+												<span class="user__addition text text--gray">В системе с
+													05.03.2023</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="merge-user__content">
+								<div class="merge-user__selects">
+									<div class="select merge-user__selects-item">
+										<select class="select__field select__field--radius-30">
+											<option value="1">Параметр 1</option>
+										</select>
+									</div>
+									<div class="select merge-user__selects-item">
+										<select class="select__field select__field--radius-30">
+											<option value="1">Параметр 2</option>
+										</select>
+									</div>
+								</div>
+								<div class="merge-user__options">
+									<label class="checkbox merge-user__options-item">
+										<input class="checkbox__input" type="radio" name="option">
+										<span class="checkbox__switch"></span>
+										<span class="text checkbox__text">Выбрать опцию</span>
+									</label>
+									<label class="checkbox merge-user__options-item">
+										<input class="checkbox__input" type="radio" name="option" checked>
+										<span class="checkbox__switch"></span>
+										<span class="text checkbox__text">Выбрать другую опцию</span>
+									</label>
+									<label class="checkbox merge-user__options-item">
+										<input class="checkbox__input" type="radio" name="option">
+										<span class="checkbox__switch"></span>
+										<span class="text checkbox__text">Выбрать</span>
+									</label>
+								</div>
+								<div class="merge-user__btns">
+									<button class="btn btn--round btn--py-12 btn--full">Объединить
+										пользователей</button>
+									<button type="button"
+										class="btn btn--round btn--transparent btn--color-danger btn--py-12 btn--full">Отмена</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<button class="icon icon-close-bold icon--danger popup__close popup__close--offset-20 js-close-popup"></button>
+		</div>
+	</div>
+
+</body>
+
+</html>

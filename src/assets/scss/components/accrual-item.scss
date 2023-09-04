@@ -1,0 +1,89 @@
+.accrual-item {
+  padding: 20px 0;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-top: 12px;
+    padding-right: 10px;
+    flex: 0 0 calc(100% / 3);
+  }
+
+  &__edit {
+    margin-top: 6px;
+  }
+
+  &__elems {
+    flex: 1 1 auto;
+    padding-right: 30px;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &-value {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-basis: 240px;
+    }
+
+    &-name {
+      flex: 1 1 auto;
+      padding-right: 10px;
+    }
+
+    &-edit {
+      width: 15px;
+      height: 15px;
+      font-size: 7px;
+      line-height: 7px;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+
+    &-input {
+      width: 90px;
+      flex: 0 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+
+  &__limit {
+    padding-left: 30px;
+    padding-bottom: 15px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &-name {
+      flex: 0 0 330px;
+    }
+
+    &-input {
+      flex: 0 0 80px;
+    }
+  }
+}

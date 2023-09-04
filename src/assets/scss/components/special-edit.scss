@@ -1,0 +1,48 @@
+.special-edit {
+  &__list {
+    &:not(:first-child) {
+      margin-top: 26px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  &__input {
+    width: 80px;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__delete {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+
+    &:before {
+      font-size: 10px;
+      color: $color-danger;
+    }
+  }
+
+  &__btns {
+    margin-top: 36px;
+  }
+
+  &__btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+}

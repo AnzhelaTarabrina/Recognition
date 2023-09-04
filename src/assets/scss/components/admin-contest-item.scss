@@ -1,0 +1,25 @@
+.admin-contest-item {
+  padding: 21px 30px 26px;
+  background: linear-gradient(180deg, rgba($color-third, 0.0495) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
+  box-shadow: 0px 0px 10px rgba($color-third, 0.33);
+  border-radius: 10px;
+
+  &__name {
+    margin-bottom: 2px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.29;
+  }
+
+  &__text {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &__progress {
+    margin-top: 5px;
+    height: 3px;
+    border-radius: 5px;
+  }
+}

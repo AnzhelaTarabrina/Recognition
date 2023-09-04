@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<title>AmRecognition | Админ - Создать товар (сертификат)</title>
+</head>
+
+<body class="body body--admin">
+	<main class="admin-main">
+		<div class="admin-container">
+			<div class="row">
+				<div class="col-3">
+					<div class="admin-navbar">
+						<a class="logo admin-navbar__logo" href="admin-updates.html">
+							<img class="logo__img" src="assets/img/logo.svg" alt="">
+						</a>
+						<nav class="admin-menu">
+							<ul class="admin-menu__list">
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-updates.html">
+										<span>Обновления</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-motivation-programs.html">
+										<span>Программы мотивации</span>
+									</a>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Пользователи</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-appeals.html">
+												<span>Обращения</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-users.html">
+												<span>Список пользователей</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-departments.html">
+												<span>Департаменты rst</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-departments.html">
+												<span>Департаменты ops</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Лимиты признания</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-special-accrual.html">
+												<span>Специальное начисление</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Разделы</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-catalog.html">
+												<span>Каталог товаров</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-orders.html">
+												<span>Заказы</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Новости</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-badges.html">
+												<span>Бейджи</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Статистика</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Статистика признаний</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Годовщины сотрудников</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Годовщины ресторанов </span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Квартальные начисления </span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>SamaShop месячный баланс</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link admin-menu__link--danger" href="#">
+										<span>Выход</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-7 mx-auto">
+					<div class="create-product">
+						<div class="create-product__title">Новый товар в AmShop</div>
+						<form class="create-form create-product__form" autocomplete="off">
+							<div class="create-form__group">
+								<span class="create-form__label">Название товара</span>
+								<div class="create-form__item">
+									<input class="settings-input settings-input--small" type="text" value="Сертификат Рив Гош">
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Категория</span>
+								<div class="filter filter--i-flex" data-tabs-name="badge-type">
+									<label class="checkbox checkbox--filter checkbox--text-small filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category" checked>
+										<span class="checkbox__switch">Одежда</span>
+									</label>
+									<label class="checkbox checkbox--filter checkbox--text-small filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category">
+										<span class="checkbox__switch">Аксессуары</span>
+									</label>
+									<label class="checkbox checkbox--filter checkbox--text-small filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category">
+										<span class="checkbox__switch">Сертификаты</span>
+									</label>
+									<label class="checkbox checkbox--filter checkbox--text-small filter__checkbox">
+										<input class="checkbox__input" type="radio" name="category">
+										<span class="checkbox__switch">Техника</span>
+									</label>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">
+									Бренд
+									<span class="text text--gray">Обновлено 12.01.2023</span>
+								</span>
+								<div class="create-form__item">
+									<div class="select select--arrow-bold select--form">
+										<select class="select__field">
+											<option value="" hidden>Выбрать</option>
+											<option value="1">Бренд 1</option>
+											<option value="2">Бренд 2</option>
+											<option value="3">Бренд 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Номинал</span>
+								<div class="create-form__item">
+									<div class="create-form__fields">
+										<div class="create-form__field">
+											<div class="create-form__input-box">
+												<input class="settings-input create-form__input" type="number" placeholder="1000">
+												<span class="create-form__input-text">руб</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Наличие</span>
+								<div class="create-form__item">
+									<div class="create-form__fields">
+										<div class="create-form__field">
+											<div class="create-form__input-box">
+												<input class="settings-input create-form__input" type="number" placeholder="5">
+												<span class="create-form__input-text">шт</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<div class="create-form__item">
+									<div class="create-form__fields">
+										<label class="checkbox create-form__field">
+											<input class="checkbox__input" type="checkbox" name="is-new" checked>
+											<span class="checkbox__switch checkbox__switch--big"></span>
+											<span class="checkbox__text">Новинка</span>
+										</label>
+										<label class="checkbox create-form__field">
+											<input class="checkbox__input" type="checkbox" name="is-gift" checked>
+											<span class="checkbox__switch checkbox__switch--big"></span>
+											<span class="checkbox__text">Подарок</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--mt-40">
+								<span class="create-form__label">Фотографии</span>
+								<div class="create-form__item">
+									<div class="create-form__photos">
+										<div class="create-form__photo">
+											<img class="create-form__photo-img" src="assets/img/products/1.png" alt="">
+											<button class="icon-close-extrabold create-form__photo-delete" type="button"></button>
+										</div>
+										<div class="create-form__photo">
+											<img class="create-form__photo-img" src="assets/img/products/1.png" alt="">
+											<button class="icon-close-extrabold create-form__photo-delete" type="button"></button>
+										</div>
+										<div class="create-form__photo">
+											<img class="create-form__photo-img" src="assets/img/products/1.png" alt="">
+											<button class="icon-close-extrabold create-form__photo-delete" type="button"></button>
+										</div>
+										<div class="create-form__photo">
+											<img class="create-form__photo-img" src="assets/img/products/1.png" alt="">
+											<button class="icon-close-extrabold create-form__photo-delete" type="button"></button>
+										</div>
+										<button class="btn btn--third btn--flex create-form__photos-btn" type="button">+</button>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--mt-40">
+								<span class="create-form__label">Цена</span>
+								<div class="create-form__item">
+									<div class="create-form__fields">
+										<div class="create-form__field">
+											<div class="create-form__input-box">
+												<input class="settings-input" type="number" placeholder="0" value="2500">
+											</div>
+											<div class="create-form__field-text">Цена <br> для магазина</div>
+										</div>
+										<div class="create-form__field">
+											<div class="create-form__input-box">
+												<input class="settings-input" type="number" placeholder="0" value="2500">
+											</div>
+											<div class="create-form__field-text">Цена <br> для выгрузки</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--mt-40">
+								<div class="create-form__item">
+									<div class="filter filter--i-flex" data-tabs-name="badge-type">
+										<label class="checkbox checkbox--filter checkbox--text-small filter__checkbox">
+											<input class="checkbox__input" type="radio" name="publish-type" checked>
+											<span class="checkbox__switch">Опубликовано в каталоге</span>
+										</label>
+										<label class="checkbox checkbox--filter checkbox--text-small filter__checkbox">
+											<input class="checkbox__input" type="radio" name="publish-type">
+											<span class="checkbox__switch">Снято с публикации</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--mt-40">
+								<div class="create-form__item">
+									<div class="create-form__btns">
+										<button class="btn create-form__btn create-form__btn--submit">Сохранить</button>
+										<button class="btn btn--gray create-form__btn">Отмена</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.settings-contact {
+  padding: 30px 75px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+
+  &__info {
+    flex: 0 0 50%;
+  }
+
+  &__status {
+    flex: 0 0 50%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__checkbox {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  &__text {
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+  }
+
+  &__field {
+    position: relative;
+    width: 166px;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  &__input {
+    padding: 11px 35px 11px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  &__field-clear {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-gray;
+    font-size: 10px;
+  }
+}
+
+@include media_max_width(680px) {
+  .settings-contact {
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__text {
+      font-size: 12px;
+      font-weight: 500;
+
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+
+    &__field {
+      width: 100%;
+    }
+
+    &__status {
+      margin-top: 15px;
+      padding-left: 0;
+    }
+  }
+}

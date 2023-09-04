@@ -1,0 +1,81 @@
+.body {
+  &--lock {
+    overflow: hidden;
+  }
+
+  &--admin {
+    min-width: $body-admin-width;
+  }
+
+  &--banner {
+    padding-bottom: 100px;
+  }
+
+  &--desktop {
+    min-width: $body-desktop-width;
+
+    .container,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+      min-width: $body-desktop-width;
+    }
+
+    @for $i from 1 through 12 {
+      .col-sm-#{$i} {
+        flex: 0 0 auto;
+        width: calc(100% / 12 * $i);
+      }
+
+      .col-md-#{$i} {
+        flex: 0 0 auto;
+        width: calc(100% / 12 * $i);
+      }
+
+      .col-lg-#{$i} {
+        flex: 0 0 auto;
+        width: calc(100% / 12 * $i);
+      }
+
+      .col-xl-#{$i} {
+        flex: 0 0 auto;
+        width: calc(100% / 12 * $i);
+      }
+
+      .col-xxl-#{$i} {
+        flex: 0 0 auto;
+        width: calc(100% / 12 * $i);
+      }
+    }
+  }
+
+  @media (max-width: ($body-desktop-width + $container-xs-offset * 2)) {
+    &--desktop {
+      .container,
+      .container-xl,
+      .container-lg,
+      .container-md,
+      .container-sm {
+        padding-left: $container-xs-offset;
+        padding-right: $container-xs-offset;
+      }
+
+      &.body--lock {
+        overflow: visible;
+      }
+    }
+
+    &--admin {
+      &.body--lock {
+        overflow: visible;
+      }
+    }
+  }
+
+  @media (max-width: 680px) {
+    &--banner {
+      padding-bottom: 140px;
+    }
+  }
+}

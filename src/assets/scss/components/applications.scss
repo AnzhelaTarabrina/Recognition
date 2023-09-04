@@ -1,0 +1,40 @@
+.applications {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    color: $color-primary;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &--success {
+      color: $color-success;
+    }
+
+    &--danger {
+      color: $color-danger;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: 500;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 18px;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  &__comment {
+    font-size: 12px;
+    color: inherit;
+    text-decoration: underline;
+    line-height: 18px;
+  }
+}

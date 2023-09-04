@@ -1,0 +1,7 @@
+@include media_max_width(680px) {
+  .ratings {
+    &__team {
+      padding-top: 115px;
+    }
+  }
+}

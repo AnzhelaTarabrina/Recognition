@@ -1,0 +1,29 @@
+.talents-modal {
+  padding-top: 53px;
+  position: relative;
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+
+  &__item {
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@include media_max_width(680px) {
+  .talents-modal {
+    padding-top: 18px;
+
+    &__item {
+      font-size: 12px;
+    }
+
+    &__close {
+      top: 15px;
+    }
+  }
+}

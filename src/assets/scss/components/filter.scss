@@ -1,0 +1,249 @@
+.filter {
+  display: flex;
+
+  &__btn {
+    position: relative;
+    padding: 8px 0;
+    flex: 1 1 100%;
+    font-size: 12px;
+    background: $color-gradient-third;
+    border-right: 1px solid rgba($color-third, 0.15);
+    color: #000;
+    white-space: nowrap;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 0px 10px rgba($color-third, 0.25);
+    }
+
+    &:first-child {
+      border-radius: 30px 0 0 30px;
+
+      &:before {
+        border-radius: 30px 0 0 30px;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 30px 30px 0;
+      border-right: none;
+
+      &:before {
+        border-radius: 0 30px 30px 0;
+      }
+    }
+
+    &--active,
+    &.tabs-btn--active {
+      background: rgba($color-third, 0.15);
+      cursor: default;
+      border-right-color: none;
+
+      &:before {
+        box-shadow: none;
+      }
+    }
+
+    &--big {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+
+    &--small {
+      padding: 7px 20px;
+    }
+
+    &--low {
+      padding: 8px 18px;
+    }
+
+    &--short {
+      padding: 7px 15px;
+    }
+
+    &--long {
+      min-width: 182px;
+    }
+
+    &--medium {
+      font-weight: 500;
+    }
+
+    &--text-small {
+      font-size: 12px;
+    }
+
+    &--text-medium {
+      font-size: 14px;
+    }
+
+    &--split {
+      &,
+      &:first-child,
+      &:last-child {
+        border-radius: 30px;
+
+        &:before {
+          border-radius: 30px
+        }
+      }
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    &--px-20 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &--px-22 {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+    &--wrap {
+      margin: 10px 5px 0;
+      flex: none;
+
+      &,
+      &:first-child,
+      &:last-child {
+        border-radius: 30px;
+
+        &:before {
+          border-radius: 30px
+        }
+      }
+    }
+
+    &--full {
+      flex-basis: 100%;
+    }
+  }
+
+  &__checkbox {
+    height: 40px;
+
+    .checkbox__switch {
+      border-right: 1px solid rgba($color-third, 0.15);
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 10px rgba($color-third, 0.25);
+      }
+    }
+
+    &:first-child .checkbox__switch {
+      border-radius: 30px 0 0 30px;
+
+      &:after {
+        border-radius: 30px 0 0 30px;
+      }
+    }
+
+    &:last-child .checkbox__switch {
+      border-radius: 0 30px 30px 0;
+      border-right: none;
+
+      &:after {
+        border-radius: 0 30px 30px 0;
+      }
+    }
+
+    .checkbox__input:checked~.checkbox__switch {
+      background: rgba($color-third, 0.15);
+      cursor: default;
+      border-right-color: none;
+
+      &:after {
+        box-shadow: none;
+      }
+    }
+
+    &--full {
+      flex: 1 1 100%;
+      
+      .checkbox__switch {
+        justify-content: center;
+      }
+    }
+  }
+
+  &--mobile {
+    display: none;
+  }
+
+  &--i-flex {
+    display: inline-flex;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -10px;
+  }
+}
+
+@include media_max_width(680px) {
+  .filter {
+    &__btn {
+      font-weight: 500;
+      flex: 1 1 auto;
+
+      &--long {
+        min-width: 133px;
+      }
+
+      &--regular {
+        font-weight: 400;
+      }
+
+      &--wrap {
+        flex: none;
+      }
+
+      &--text-medium {
+        font-size: 12px;
+      }
+
+      &--full {
+        flex-basis: 100%;
+      }
+
+      &--sm-full {
+        flex-basis: 100%;
+      }
+    }
+
+    &--mobile {
+      display: flex;
+    }
+
+    &--desktop {
+      display: none;
+    }
+
+    &--sm-flex {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.request-contest {
+  padding: 30px 120px 23px 30px;
+  display: flex;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &__user {
+    flex: 0 0 320px;
+    align-items: flex-start;
+  }
+
+  &__body {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  &__comment {
+    margin-bottom: 8px;
+  }
+
+  &__buttons {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}

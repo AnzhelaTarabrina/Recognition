@@ -1,0 +1,56 @@
+.profile-talent {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  &__name {
+    flex: 1 1 100%;
+  }
+
+  &__docs {
+    flex: 1 1 100%;
+    text-align: right;
+    color: $color-gray;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $color-gray;
+  }
+
+  &--about {
+    padding-top: 22px;
+    flex-direction: column;
+    border-top: 1px solid rgba($color-third, 0.15);
+    font-size: 12px;
+  }
+
+  &--about &__name {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  &--about &__docs {
+    text-align: left;
+    font-weight: 500;
+  }
+
+  &--about &__text {
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .profile-talent {
+    font-size: 12px;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}

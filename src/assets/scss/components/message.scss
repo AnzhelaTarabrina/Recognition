@@ -1,0 +1,28 @@
+.message {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  padding: 9px 10px;
+  width: 200px;
+  background: $color-gradient-primary;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s, opacity .3s;
+
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--error {
+    background: $color-gradient-danger;
+  }
+
+  &--success {
+    background: $color-gradient-success;
+  }
+}

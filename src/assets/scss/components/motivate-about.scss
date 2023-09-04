@@ -1,0 +1,175 @@
+.motivate-about {
+  padding-bottom: 80px;
+
+  &__back {
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+
+  &__title {
+    line-height: 1.33;
+  }
+
+  &__meta {
+    margin-top: 4px;
+    line-height: 18px;
+  }
+
+  &__img {
+    margin-top: 12px;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__users {
+    margin-top: 20px;
+
+    &-label {
+      margin-bottom: 15px;
+    }
+
+    &-list {
+      margin: -10px -5px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      margin: 10px 5px 0;
+      width: calc(50% - 10px);
+    }
+
+    &--leader {
+      margin-top: 35px;
+    }
+  }
+
+  &__awards {
+    margin-top: 40px;
+
+    &-title {
+      margin-bottom: 15px;
+      line-height: 20px;
+    }
+  }
+
+  &__tabs-btns {
+    margin-top: 36px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    line-height: 20px;
+
+    p,
+    .accordion-btn {
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
+    }
+
+    .images-slider {
+      margin: 25px 0;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@include media_max_width(860px) {
+  .motivate-about {
+    &__awards {
+      margin-top: 30px;
+    }
+
+    &__text {
+      .images-slider {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .motivate-about {
+    padding-top: 49px;
+    padding-bottom: 35px;
+    
+    &__header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__back {
+      display: none;
+    }
+
+    &__title {
+      font-size: 15px;
+    }
+
+    &__meta {
+      margin-top: 0;
+    }
+
+    &__img {
+      margin: 0 -#{$container-xs-offset} 20px;
+      width: calc(100vw + $container-xs-offset * 2);
+      max-width: calc(100vw + $container-xs-offset * 2);
+      height: 300px;
+      order: -1;
+    }
+
+    &__users {
+      margin-top: 14px;
+
+      &--leader {
+        margin-top: 25px;
+      }
+    }
+
+    &__users-item {
+      width: calc(100% - 10px);
+    }
+
+    &__awards {
+      margin-top: 20px;
+      padding: 20px 12px 22px;
+      text-align: center;
+      background: linear-gradient(0deg, rgba($color-third, 0.15), rgba($color-third, 0.15)), rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+    }
+
+    &__awards-title {
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &__tabs-btns {
+      margin-top: 30px;
+    }
+
+    &__text {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 18px;
+
+      .accordion-content {
+        margin-left: -#{$container-xs-offset};
+        margin-right: -#{$container-xs-offset};
+        padding-left: 27px;
+        padding-right: 27px;
+      }
+
+      .images-slider {
+        margin-left: -#{$container-xs-offset};
+        margin-right: -#{$container-xs-offset};
+      }
+    }
+  }
+}

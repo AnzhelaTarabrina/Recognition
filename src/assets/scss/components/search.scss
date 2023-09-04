@@ -1,0 +1,173 @@
+.search {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    background: rgba($color-third, 0.15);
+    border-radius: 30px;
+    border: none;
+    padding: 8px 30px 8px 10px;
+    outline: none;
+    color: $color-gray;
+    font-size: 12px;
+
+    &--medium {
+      font-weight: 500;
+    }
+
+    &--fz-14 {
+      font-size: 14px;
+    }
+
+    &--pr-30 {
+      padding-right: 30px;
+    }
+
+    &--black {
+      color: #000;
+    }
+
+    &--middle {
+      padding: 13px 30px 13px 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+
+    &--clear {
+      display: none;
+    }
+
+    &--r-12 {
+      right: 12px;
+    }
+
+    &--r-20 {
+      right: 20px;
+    }
+  }
+
+  &__icon {
+    font-size: 12px;
+    color: $color-gray;
+    transition: color .3s;
+  }
+
+  &__btn:hover &__icon {
+    color: $color-primary;
+  }
+
+  &__open {
+    font-size: 20px;
+    transition: all .3s;
+  }
+
+  &--line &__input {
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid $color-gray;
+    padding: 0 20px 2px 0;
+  }
+
+  &--line &__input--bd-third {
+    border-bottom-color: rgba($color-third, 0.15);
+  }
+
+  &--line &__input--pr-30 {
+    padding-right: 30px;
+  }
+
+  &--line &__btn {
+    right: 0;
+    padding-bottom: 1px;
+  }
+
+  &--line &__btn--r-12 {
+    right: 12px;
+  }
+
+  &--line &__btn--r-20 {
+    right: 20px;
+  }
+
+  &--line &__icon {
+    vertical-align: top;
+  }
+
+  &--fill &__btn {
+    &--submit {
+      display: none;
+    }
+
+    &--clear {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    display: none;
+  }
+
+  &--toggle {
+    z-index: 1;
+  }
+
+  &--toggle &__input {
+    background: #fde9c4;
+  }
+
+  &--toggle &__main {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: width .3s, visibility .3s, opacity .3s;
+  }
+
+  &--toggle &__input {
+    padding: 7px 0 7px 0;
+    transition: padding .3s;
+  }
+
+  &--toggle#{&}--active &__main {
+    visibility: visible;
+    width: 186px;
+  }
+
+  &--toggle#{&}--active &__input {
+    padding: 7px 30px 7px 10px;
+  }
+
+  &--toggle#{&}--active &__open {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@include media_max_width(680px) {
+  .search {
+    &__input {
+      font-size: 12px;
+    }
+
+    &--mobile {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}

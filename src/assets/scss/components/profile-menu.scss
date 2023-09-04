@@ -1,0 +1,72 @@
+.profile-menu {
+  &__link {
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:after {
+      margin-left: 5px;
+      content: '\e805';
+      font-family: 'iconsfont';
+      font-size: 9px;
+    }
+  }
+
+  &__item:not(:first-child) &__link {
+    padding-top: 16px;
+  }
+
+  &__item:not(:last-child) &__link {
+    border-bottom: 1px solid rgba($color-third, 0.15);
+    padding-bottom: 18px;
+  }
+
+  &__text {
+    transition: transform .4s;
+  }
+
+  &__link:hover &__text {
+    transform: translateX(10px);
+  }
+}
+
+@include media_max_width(680px) {
+  .profile-menu {
+    &__list {
+      margin: -5px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin: 5px;
+      width: calc(50% - 10px);
+    }
+
+    &__link {
+      background: $color-gradient-third;
+      box-shadow: 0px 0px 10px rgba($color-third, 0.25);
+      border-radius: 10px;
+      height: 80px;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 500;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__item:not(:first-child) &__link {
+      padding-top: 10px;
+    }
+
+    &__item:not(:last-child) &__link {
+      border-bottom: none;
+      padding-bottom: 10px;
+    }
+  }
+}

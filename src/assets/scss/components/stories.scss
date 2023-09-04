@@ -1,0 +1,172 @@
+.stories {
+  position: fixed;
+  z-index: 60;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bg;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s, opacity .3s;
+
+  &__progress {
+    &-list {
+      position: relative;
+      z-index: 1;
+      margin: 0 -4px;
+      padding: 5px 5px 0;
+      display: flex;
+    }
+
+    &-item {
+      margin: 0 4px;
+      flex: 1 1 auto;
+    }
+  }
+
+  &__item {
+    padding-top: 150px;
+    text-align: center;
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 700;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 2;
+    margin-top: 35px;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 300px;
+    max-width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: $color-gray;
+
+    &:before {
+      transition: color .3s;
+    }
+
+    &:hover:before {
+      color: #000;
+    }
+  }
+
+  &__prev {
+    left: 30px;
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__next {
+    right: 30px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    font-size: 20px;
+    color: $color-gray;
+
+    &:before {
+      transition: color .3s;
+    }
+
+    &:hover:before {
+      color: #000;
+    }
+  }
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &--admin {
+    top: 0;
+  }
+}
+
+.body--desktop .stories {
+  min-width: $body-desktop-width;
+}
+
+.body--admin .stories {
+  min-width: $body-admin-width;
+}
+
+@include media_max_width(991px) {
+  .stories {
+    &__img {
+      max-width: 220px;
+    }
+
+    &__btn {
+      min-width: 222px;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .stories {
+    top: 0;
+
+    &__item {
+      padding-top: 120px;
+    }
+
+    &__img {
+      max-width: 163px;
+    }
+
+    &__btn {
+      width: 100%;
+      max-width: 300%;
+    }
+
+    &__prev,
+    &__next {
+      width: 25%;
+      height: 100%;
+      top: 0;
+      transform: translateY(0);
+
+      &:before {
+        display: none;
+      }
+    }
+  
+    &__prev {
+      left: 0;
+    }
+  
+    &__next {
+      right: 0;
+    }
+  }
+}

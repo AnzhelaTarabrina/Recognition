@@ -1,0 +1,98 @@
+.contest-description {
+  padding: 50px 0 80px;
+
+  &--min {
+    padding: 50px 28.5% 80px 0;
+  }
+
+  &--medium {
+    padding: 50px 14.2% 80px 0;
+  }
+
+  &__header {
+    margin: 45px 0 31px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header-select {
+    flex: 0 0 240px;
+  }
+
+  &__img {
+    margin-bottom: 15px;
+    max-width: 480px;
+  }
+
+  &__item {
+    margin-bottom: 27px;
+    line-height: 1.5;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+  }
+
+  &__awards {
+    margin-top: 35px;
+    border-top: 1px dashed $color-gray;
+    padding-top: 30px;
+    display: flex;
+  }
+
+  &__awards-title {
+    width: 120px;
+    padding-right: 10px;
+  }
+
+  &__awards-list {
+    column-count: 2;
+    column-width: 230px;
+  }
+
+  &__awards-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+  &__search {
+    margin-bottom: 30px;
+  }
+
+  &__players {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__player {
+    margin-bottom: 19px;
+    padding-right: 10px;
+    flex: 0 0 360px;
+  }
+
+  &__pagination {
+    margin-bottom: 30px;
+  }
+
+  &__motivate-winner-items {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  &__motivate-winner-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.fixed-btns {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+
+  &__list {
+    margin: 0 auto;
+    display: flex;
+    width: 750px;
+    max-width: 100%;
+  }
+
+  &__btn {
+    flex: 1 1 100%;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+
+@include media_max_width(1200px) {
+  .fixed-btns {
+    &__list {
+      width: 667px;
+    }
+  }
+}
+
+@include media_max_width(991px) {
+  .fixed-btns {
+    &__list {
+      width: 633px;
+    }
+  }
+}
+
+@include media_max_width(860px) {
+  .fixed-btns {
+    &__list {
+      width: 553px;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .fixed-btns {
+    bottom: 0;
+
+    &__list {
+      width: 100%;
+    }
+
+    &__btn {
+      border-radius: 0;
+      font-size: 12px;
+      font-weight: 500;
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+  }
+}

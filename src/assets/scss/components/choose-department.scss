@@ -1,0 +1,37 @@
+.choose-department {
+  &__title {
+    margin-bottom: 45px;
+    font-weight: 500;
+    line-height: 1.29;
+  }
+
+  &__list {
+    margin: -5px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 5px 0;
+    width: 50%;
+
+    &:nth-child(2n + 1) {
+      padding-right: 10px;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+  }
+
+  &__btns {
+    margin-top: 50px;
+    display: flex;
+  }
+
+  &__btn {
+    flex: 1 1 100%;
+    border-radius: 0;
+    
+  }
+}

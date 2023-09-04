@@ -1,0 +1,23 @@
+.badge-settings {
+  padding: 50px 120px 50px 0;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__form {
+    margin-top: 55px;
+  }
+}
+
+@include media_max_width(1440px) {
+  .badge-settings {
+    padding-right: 80px;
+  }
+}
+
+@include media_max_width(1200px) {
+  .badge-settings {
+    padding-right: 0;
+  }
+}

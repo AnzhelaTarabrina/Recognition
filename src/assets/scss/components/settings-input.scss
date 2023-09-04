@@ -1,0 +1,49 @@
+.settings-input {
+  width: 100%;
+  padding: 10px 20px;
+  background: rgba($color-third, 0.15);
+  border-radius: 30px;
+  line-height: 20px;
+  border: none;
+  resize: none;
+  outline: none;
+  overflow-y: hidden;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &--area {
+    padding: 20px 30px 25px;
+    border-radius: 10px;
+  }
+
+  &--px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &--small {
+    padding-left: 10px;
+    height: 30px;
+    font-size: 12px;
+    color: $color-gray;
+    font-weight: 500;
+  }
+
+  &--color-gray {
+    color: $color-gray;
+  }
+}
+
+@include media_max_width(680px) {
+  .settings-input {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,66 @@
+.recognition-form {
+  &__item {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: auto;
+    }
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 100%;
+
+    &--sum {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  &__checkboxes {
+    margin: -2.5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__checkbox {
+    margin: 2.5px;
+  }
+
+  &__submit {
+    margin-top: 30px;
+    width: 100%;
+
+    &--self-end {
+      align-self: flex-end;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .recognition-form {
+    &__item {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+
+    &__submit {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}

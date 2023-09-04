@@ -1,0 +1,33 @@
+.admin-catalog {
+  padding: 35px 0 68px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-checkbox {
+      margin-left: 10px;
+      width: 240px;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__products {
+    margin-top: 60px;
+  }
+}
+
+@include media_max_width(680px) {
+  .admin-catalog {
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &-checkbox {
+        margin-top: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+}

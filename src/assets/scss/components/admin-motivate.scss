@@ -1,0 +1,142 @@
+.admin-motivate {
+  padding: 50px 0 95px;
+
+  &__main {
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 52px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    padding-top: 38.1%;
+    width: 57.15%;
+    flex: 0 0 auto;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding-left: 20px;
+    flex: 1 1 auto;
+  }
+
+  &__text {
+    line-height: 1.5;
+
+    &--stage {
+      margin-top: 10px;
+    }
+
+    &--users {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__tabs {
+    margin-top: 30px;
+
+    &-list {
+      margin-top: 30px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 15px;
+  }
+
+  &__values {
+    &:not(:first-child) {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px dashed #808080;
+    }
+
+    &-list {
+      margin-top: -16px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      display: flex;
+      margin-top: 16px;
+
+      span {
+        padding-right: 10px;
+      }
+      
+      &:nth-child(2n + 1) {
+        flex: 0 0 57.15%;
+
+        span {
+          flex: 1 1 100%;
+        }
+      }
+
+      &:nth-child(2n) {
+        flex: 0 0 42.85%;
+
+        span {
+          flex: 1 1 auto;
+
+          &:first-child {
+            flex: 0 0 66.67%;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__users {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
+    &-label {
+      margin-bottom: 15px;
+      line-height: 1.5;
+
+      &--mb-25 {
+        margin-bottom: 25px;
+      }
+    }
+
+    &-list {
+      margin-top: -20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      margin-top: 20px;
+      padding-right: 10px;
+      flex: 0 0 240px;
+    }
+
+    &-btn {
+      margin-top: 20px;
+    }
+
+    &--white {
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 20px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.rules {
+  padding-bottom: 85px;
+
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
+    }
+  }
+
+  &__faq {
+    margin-top: 31px;
+  }
+}
+
+@include media_max_width(680px) {
+  .rules {
+    padding: 90px 0 45px;
+  }
+}

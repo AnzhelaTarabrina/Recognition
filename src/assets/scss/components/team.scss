@@ -1,0 +1,40 @@
+.team {
+  padding-bottom: 50px;
+
+  &__list {
+    margin-top: 44px;
+
+    &--ratings {
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .team {
+    padding: 70px 0 30px;
+
+    &__list {
+      margin-top: 20px;
+
+      &--ratings {
+        margin-top: 24px;
+      }
+    }
+
+    &--recognition {
+      padding-top: 115px;
+    }
+  }
+}

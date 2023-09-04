@@ -1,0 +1,41 @@
+.admin-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  padding-top: 20px;
+  width: calc((100vw - 1440px) / 2 + 350px);
+  min-width: 360px;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  background: #fff;
+  overflow-y: auto;
+
+  &__logo {
+    margin-left: auto;
+    margin-bottom: 50px;
+    display: block;
+    width: 240px;
+    max-width: calc(100% - 50px);
+
+    .logo__img {
+      max-width: 137px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .admin-navbar {
+    width: 25vw;
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .admin-navbar {
+    &__logo {
+      margin-left: 50px;
+    }
+  }
+}

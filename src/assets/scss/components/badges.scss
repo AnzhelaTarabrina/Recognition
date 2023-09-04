@@ -1,0 +1,15 @@
+.badges {
+  padding: 120px 160px 80px 0;
+}
+
+@include media_max_width(1440px) {
+  .badges {
+    padding-right: 80px;
+  }
+}
+
+@include media_max_width(1200px) {
+  .badges {
+    padding-right: 0;
+  }
+}

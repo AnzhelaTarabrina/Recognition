@@ -1,0 +1,92 @@
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "iconsfont";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.icon {
+  &--primary {
+    color: $color-primary;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--danger {
+    color: $color-danger;
+  }
+
+  &--success {
+    color: $color-success;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--rotate-45 {
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &--bg {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  
+    &:before {
+      font-size: 10px;
+    }
+  
+    &-primary {
+      background-color: $color-primary;
+    }
+  
+    &-white {
+      background-color: #fff;
+    }
+  
+    &-danger {
+      background-color: $color-danger;
+    }
+  
+    &-success {
+      background-color: $color-success;
+    }
+  
+    &-gray {
+      background-color: $color-gray;
+    }
+  }
+
+  &--flex-00-auto {
+    flex: 0 0 auto;
+  }
+}
+
+.icon-wallet:before { content: '\e800'; } /* '' */
+.icon-close:before { content: '\e801'; } /* '' */
+.icon-search:before { content: '\e802'; } /* '' */
+.icon-time:before { content: '\e803'; } /* '' */
+.icon-bucket:before { content: '\e804'; } /* '' */
+.icon-arrow-right:before { content: '\e805'; } /* '' */
+.icon-menu:before { content: '\e806'; } /* '' */
+.icon-close-bold:before { content: '\e807'; } /* '' */
+.icon-back:before { content: '\e808'; } /* '' */
+.icon-edit:before { content: '\e809'; } /* '' */
+.icon-close-extrabold:before { content: '\e80a'; } /* '' */
+.icon-news:before { content: '\e80b'; } /* '' */
+.icon-money:before { content: '\e80c'; } /* '' */

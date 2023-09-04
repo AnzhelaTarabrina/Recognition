@@ -1,0 +1,125 @@
+.navbar {
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    position: relative;
+    padding: 20px 20px 18px 20px;
+    display: inline-block;
+    width: 150px;
+    line-height: 1;
+    border-left: 1px solid rgba(0, 0, 0, 0.24);
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  &__link:hover &__text {
+    transform: translateY(-3px);
+  }
+
+  &__item--active &__link:hover &__text,
+  &__item--menu &__link:hover &__text {
+    transform: translateY(0);
+  }
+
+  &__item--active &__link {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    cursor: default;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &__item--active+&__item &__link {
+    border-left: none;
+  }
+
+  &__item:last-child &__link {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(0, 0, 0, 0.24);
+    }
+  }
+
+  &__item--active:last-child &__link {
+    border-right: none;
+  }
+
+  &__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: $color-second;
+    font-size: 20px;
+
+    &--round {
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    margin-top: 8px;
+    color: #fff;
+    transition: transform .3s;
+  }
+}
+
+@include media_max_width(991px) {
+  .navbar {
+    &__link {
+      width: 111px;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .navbar {
+    &__item {
+      flex: 1 1 100%;
+
+      &--active {
+        .navbar__link {
+          background: $color-second;
+          border-left-color: $color-second;
+        }
+
+        .navbar__icon {
+          color: #fff;
+        }
+      }
+    }
+  
+    &__link {
+      padding: 7px 7px 6px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  
+    &__icon {
+      margin: 0 auto;
+    }
+  
+    &__text {
+      margin-top: 5px;
+    }
+  }
+}

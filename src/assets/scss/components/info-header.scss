@@ -1,0 +1,33 @@
+.info-header {
+  &__item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    &--subtitle {
+      margin-bottom: 7px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
+      color: #000;
+    }
+  }
+}
+
+@include media_max_width(680px) {
+  .info-header {
+    &__item {
+      &--subtitle {
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: $color-gray;
+      }
+    }
+
+    &__mobile-none {
+      display: none;
+    }
+  }
+}

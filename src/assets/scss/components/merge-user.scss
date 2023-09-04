@@ -1,0 +1,74 @@
+.merge-user {
+  padding-top: 100px;
+
+  &__box {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  &__content {
+    margin: 0 auto;
+    max-width: 720px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-right: 30px;
+  }
+
+  &__search {
+    margin-top: 36px;
+  }
+
+  &__list {
+    margin-top: 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &-checkbox {
+      margin-right: 10px;
+    }
+  }
+
+  &__selects {
+    margin: 40px auto 0;
+    display: flex;
+    max-width: 720px;
+
+    &-item {
+      flex: 1 1 100%;
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__options {
+    margin-top: 40px;
+
+    &-item {
+      display: flex;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__btns {
+    margin-top: 40px;
+  }
+}

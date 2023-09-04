@@ -1,0 +1,11 @@
+.main {
+  padding-top: 130px;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+@include media_max_width(680px) {
+  .main {
+    padding-top: 0;
+  }
+}

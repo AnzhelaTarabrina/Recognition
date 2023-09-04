@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<title>AmRecognition | Админ - Конкурс создать</title>
+</head>
+
+<body class="body body--admin">
+	<main class="admin-main">
+		<div class="admin-container">
+			<div class="row">
+				<div class="col-3">
+					<div class="admin-navbar">
+						<a class="logo admin-navbar__logo" href="admin-updates.html">
+							<img class="logo__img" src="assets/img/logo.svg" alt="">
+						</a>
+						<nav class="admin-menu">
+							<ul class="admin-menu__list">
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-updates.html">
+										<span>Обновления</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-motivation-programs.html">
+										<span>Программы мотивации</span>
+									</a>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link" href="admin-contests-list.html">
+										<span>Конкурсы</span>
+									</a>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Пользователи</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-appeals.html">
+												<span>Обращения</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-users.html">
+												<span>Список пользователей</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub"
+												href="admin-departments.html">
+												<span>Департаменты rst</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub"
+												href="admin-departments.html">
+												<span>Департаменты ops</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Лимиты признания</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub"
+												href="admin-special-accrual.html">
+												<span>Специальное начисление</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Разделы</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-catalog.html">
+												<span>Каталог товаров</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-orders.html">
+												<span>Заказы</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Новости</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="admin-badges.html">
+												<span>Бейджи</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item admin-menu__item--has-children">
+									<button class="admin-menu__link">
+										<span>Статистика</span>
+									</button>
+									<ul class="admin-menu__sublist">
+										<li class="admin-menu__subitem">
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Статистика признаний</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Годовщины сотрудников</span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Годовщины ресторанов </span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>Квартальные начисления </span>
+											</a>
+											<a class="admin-menu__link admin-menu__link--sub" href="#">
+												<span>SamaShop месячный баланс</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="admin-menu__item">
+									<a class="admin-menu__link admin-menu__link--danger" href="#">
+										<span>Выход</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-7 mx-auto">
+					<div class="create-product create-product--motivate">
+						<div class="breadcrumbs">
+							<a class="link breadcrumbs__link" href="admin-contests-list.html">Конкурсы</a>
+							<span class="breadcrumbs__current">Создать</span>
+						</div>
+						<form class="create-form create-product__form create-product__form--mt-75" autocomplete="off">
+							<div class="create-form__group">
+								<span class="create-form__label">Название конкурса</span>
+								<div class="create-form__item">
+									<input class="settings-input" type="text" value="Конкурс талантов Junior League">
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Главное фото</span>
+								<div class="create-form__item">
+									<div class="create-form__elems">
+										<div class="text js-file-value" data-file-output="contest-image">rocc2022.jpg
+										</div>
+										<label class="file-field badge-form__file-field">
+											<input type="file" class="file-field__input js-file-input"
+												data-file-output="contest-image">
+											<span
+												class="btn btn--third btn--round btn--filter btn--minw-120">Обзор</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Описание</span>
+								<div class="create-form__item">
+									<textarea class="settings-input settings-input--area create-form__area"
+										data-min-height="160">Описание. Регистрация на кибертурнир KFC GAMES уже открыта для тебя или твоей команды! Главный приз – полное обновление игрового сет-апа (компьютер, кресло, мышка, монитор, наушники, коврик, клавиатура) + призовой фонд более одного миллиона рублей.</textarea>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Требования</span>
+								<div class="create-form__item">
+									<textarea class="settings-input settings-input--area create-form__area" data-min-height="100">
+Список требований:
+• Первое
+• Второе 
+• Третье
+• Результат на почту mail@mail.ru
+									</textarea>
+								</div>
+							</div>
+							<div class="create-form__group">
+								<span class="create-form__label">Прием заявок</span>
+								<div class="create-form__item">
+									<div class="create-form__fields">
+										<div class="create-form__field">
+											<div class="create-form__input-box">
+												<input class="settings-input settings-input--px-10" type="text" placeholder="__/__/____">
+											</div>
+											<div class="create-form__field-text create-form__field-text--small">первый <br> день</div>
+										</div>
+										<div class="create-form__field">
+											<div class="create-form__input-box">
+												<input class="settings-input settings-input--px-10" type="text" placeholder="__/__/____">
+											</div>
+											<div class="create-form__field-text create-form__field-text--small">последний <br> день</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--mt-30">
+								<div class="create-form__item">
+									<div class="create-form__fields">
+										<label class="checkbox create-form__field">
+											<input class="checkbox__input" type="checkbox" name="pre-moderation" checked="">
+											<span class="checkbox__switch checkbox__switch--big"></span>
+											<span class="checkbox__text">Премодерация заявок</span>
+										</label>
+										<label class="checkbox create-form__field">
+											<input class="checkbox__input" type="checkbox" name="is-link" checked="">
+											<span class="checkbox__switch checkbox__switch--big"></span>
+											<span class="checkbox__text">Ссылка внутри заявки</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--dashed create-form__group--mt-30">
+								<div class="create-form__label create-form__label--jc-start">
+									<span class="text create-form__label-text">Ответственный менеджер</span>
+								</div>
+								<div class="create-form__item">
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<a class="link link--black create-form__element-text" href="admin-user.html">Анатолий Константиновский</a>
+										</div>
+										<div class="create-form__element">
+											<button class="link">Изменить</button>
+											<button class="icon icon-close-bold search__icon create-form__element-btn"></button>
+										</div>
+									</div>
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<a class="link link--black create-form__element-text" href="admin-user.html">Анатолий Константиновский</a>
+										</div>
+										<div class="create-form__element">
+											<button class="link">Изменить</button>
+											<button class="icon icon-close-bold search__icon create-form__element-btn"></button>
+										</div>
+									</div>
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<button class="link link--regular create-form__element-text"type="button">+ Добавить менеджера</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--dashed create-form__group--mt-35">
+								<div class="create-form__label create-form__label--jc-start">
+									<span class="text create-form__label-text">Номинации</span>
+								</div>
+								<div class="create-form__item">
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<div class="create-form__element-text">Фотография</div>
+										</div>
+										<div class="create-form__element">
+											<button class="icon icon-close-bold search__icon create-form__element-btn"></button>
+										</div>
+									</div>
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<div class="create-form__element-text">Музыка</div>
+										</div>
+										<div class="create-form__element">
+											<button class="icon icon-close-bold search__icon create-form__element-btn"></button>
+										</div>
+									</div>
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<button class="link link--regular create-form__element-text"type="button">+ Добавить номинацию</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--dashed create-form__group--mt-35">
+								<div class="create-form__label create-form__label--pt-8 create-form__label--jc-start">
+									<span class="text create-form__label-text">Призы</span>
+									<span class="text text--danger">*не редактируются после публикации конкурса</span>
+								</div>
+								<div class="create-form__item">
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<div class="create-form__element-text">1 место</div>
+										</div>
+										<div class="create-form__element">
+											<div class="create-form__input-box">
+												<input class="settings-input settings-input--px-10 create-form__input" placeholder="0" value="2000">
+												<span class="create-form__input-text create-form__input-text--right-10 prize"></span>
+											</div>
+											<button type="button" class="profile-award profile-award--small create-form__element-btn--ml-84 js-open-popup" data-popup-name="choose-badge">
+												<img class="profile-award__img" src="assets/img/awards/3.png" alt="">
+											</button>
+										</div>
+									</div>
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<div class="create-form__element-text">2 место</div>
+										</div>
+										<div class="create-form__element">
+											<div class="create-form__input-box">
+												<input class="settings-input settings-input--px-10 create-form__input" placeholder="0" value="1000">
+												<span class="create-form__input-text create-form__input-text--right-10 prize"></span>
+											</div>
+											<button type="button" class="profile-award profile-award--small create-form__element-btn--ml-84 js-open-popup" data-popup-name="choose-badge">
+												<img class="profile-award__img" src="assets/img/awards/3.png" alt="">
+											</button>
+										</div>
+									</div>
+									<div class="create-form__elems create-form__elems--mb-10">
+										<div class="create-form__element">
+											<div class="create-form__element-text">3 место</div>
+										</div>
+										<div class="create-form__element">
+											<div class="create-form__input-box">
+												<input class="settings-input settings-input--px-10 create-form__input">
+												<span class="create-form__input-text create-form__input-text--right-10 prize"></span>
+											</div>
+											<button type="button" class="profile-award profile-award--small create-form__element-btn--ml-84 js-open-popup" data-popup-name="choose-badge">+</button>
+										</div>
+									</div>
+									<div class="create-form__elems create-form__elems--mb-10 create-form__elems--mt-30">
+										<div class="create-form__element">
+											<button class="link link--regular create-form__element-text" type="button">+ Добавить место</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="create-form__group create-form__group--mt-35">
+								<div class="create-form__item create-form__item--full">
+									<div class="create-form__btns">
+										<button type="submit" class="btn btn--fz-18 create-form__btn create-form__btn--big create-form__btn-full">Опубликовать конкурс</button>
+										<button type="submit" class="btn btn--fz-18 btn--py-19 btn--color-dark btn--transparent btn--full ">Сохранить как черновик</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="popup popup--full popup--admin" data-popup-name="choose-badge">
+		<div class="popup__content">
+			<div class="admin-container">
+				<div class="row">
+					<div class="col-6 mx-auto">
+						<div class="choose-badge">
+							<div class="breadcrumbs">
+								<a class="link breadcrumbs__link" href="admin-create-contest.html">Новый конкурс</a>
+								<span class="breadcrumbs__current">Выбрать бейдж</span>
+							</div>
+							<form class="choose-badge__form" autocomplete="off">
+								<div class="choose-badge__list">
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/2.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/3.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/4.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/8.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/2.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/3.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/4.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/8.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/2.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge" checked>
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/3.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/4.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/8.png" alt="">
+											</span>
+										</div>
+									</label>
+									<label class="checkbox checkbox--badge choose-badge__item">
+										<input class="checkbox__input" type="radio" name="choose-badge">
+										<div class="checkbox__switch">
+											<span class="profile-award">
+												<img class="profile-award__img" src="assets/img/awards/1.png" alt="">
+											</span>
+										</div>
+									</label>
+								</div>
+								<div class="choose-badge__btns">
+									<button class="btn btn--round btn--py-12 btn--full">Выбрать бейдж</button>
+									<button type="button" class="btn btn--round btn--transparent btn--color-danger btn--py-12 btn--full">Отмена</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="icon icon-close-bold icon--danger popup__close popup__close--offset-20 js-close-popup"></button>
+		</div>
+	</div>
+</body>
+
+</html>

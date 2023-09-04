@@ -1,0 +1,20 @@
+.motivate-winners {
+  padding: 50px 0 80px;
+
+  &__list {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

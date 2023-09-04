@@ -1,0 +1,33 @@
+.contests-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba($color-third, 0.0495) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
+  box-shadow: 0px 0px 10px rgba($color-third, 0.33);
+  overflow: hidden;
+
+  &__body {
+    line-height: 1.8;
+  }
+
+  &__name {
+  }
+
+  &__text {
+    margin-top: 5px;
+
+    a {
+      margin: 0 5px;
+    }
+  }
+
+  &__butttons {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

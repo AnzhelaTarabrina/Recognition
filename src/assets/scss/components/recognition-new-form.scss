@@ -1,0 +1,49 @@
+.recognition-new-form {
+  &__input-box {
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  &__input-text {
+    align-items: center;
+    background-color: #fde5b9;
+    color: gray;
+    display: flex;
+    height: 100%;
+    padding-left: 5px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+
+  &__search {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    &--border {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba($color-third, 0.15);
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__user {
+    padding-right: 10px;
+  }
+}
+
+@include media_max_width(680px) {
+  .recognition-new-form {
+    &__search {
+      margin-bottom: 22px;
+    }
+  }
+}

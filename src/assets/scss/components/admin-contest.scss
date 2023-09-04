@@ -1,0 +1,50 @@
+.admin-contest {
+  padding: 50px 28.5% 80px 0;
+
+  &__back {
+    display: inline-block;
+    margin-bottom: 48px;
+  }
+
+  &__name {
+    line-height: 1.29;
+  }
+
+  &__progress {
+    margin: 11px 0 5px;
+  }
+
+  &__tabs {
+    margin-top: 45px;
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__players {
+    margin-top: 45px;
+
+    &-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__player {
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 40px;
+  }
+}
+
+@include media_max_width(1200px) {
+  .admin-contest {
+    padding-right: 14.25%;
+  }
+}

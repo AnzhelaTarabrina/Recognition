@@ -1,0 +1,41 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 680px,
+  md: 860px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 664px,
+  md: 760px,
+  lg: 800px,
+  xl: 900px,
+) !default;
+
+$grid-gutter-width: 0 !default;
+
+$spacer: 1rem !default;
+$gutters: (
+  0: 0,
+  1: $spacer * 0.625,
+  2: $spacer * 1.5,
+  3: $spacer * 1.625,
+  4: $spacer * 2.5,
+  5: $spacer * 3,
+) !default;
+
+@import '~bootstrap/scss/bootstrap-grid.scss';
+
+.admin-container {
+  max-width: 1440px;
+  @include make-container();
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding-left: $container-xs-offset;
+    padding-right: $container-xs-offset;
+  }
+}
