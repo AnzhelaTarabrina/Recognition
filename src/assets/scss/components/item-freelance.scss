@@ -1,0 +1,19 @@
+.item-freelance {
+  padding: 17px 15px 13px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba($color-third, 0.0495) 0%, rgba($color-third, 0.15) 100%), #FFFFFF;
+  box-shadow: 0px 0px 10px rgba($color-third, 0.33);
+  font-size: 12px;
+  line-height: 1.5;
+
+  &--inactive {
+    color: $color-gray;
+    a {
+      color: $color-gray;
+    }
+  }
+
+  &__bottom {
+    margin-top: 2px;
+  }
+}

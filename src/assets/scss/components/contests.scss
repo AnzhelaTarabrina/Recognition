@@ -7,12 +7,20 @@
 
   &__categories {
     margin-bottom: 50px;
+
+    &--mb-40 {
+      margin-bottom: 40px;
+    }
   }
 
   &__item {
     &:not(:first-child) {
       margin-top: 10px;
     }
+  }
+
+  &__select {
+    margin-bottom: 20px;
   }
 }
 
