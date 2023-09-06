@@ -1,0 +1,23 @@
+.my-resume {
+  padding: 15px 20px 18px;
+  border-radius: 10px;
+  background: #FFF;
+  font-size: 12px;
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__info {
+    &::before {
+      font-size: 10px;
+      margin-right: 8px;
+    }
+  }
+}
