@@ -49,6 +49,26 @@
       margin-top: 5px;
     }
   }
+
+  &__control {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      font-size: 10px;
+      margin-right: 8px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+
+    &--min {
+      &::before {
+        font-size: 9px;
+      }
+    }
+  }
 }
 
 @include media_max_width(680px) {
@@ -63,6 +83,12 @@
       padding-top: 74px;
       margin-bottom: 15px;
       display: block;
+    }
+
+    &__form {
+      &--mt-74 {
+        margin-top: 74px;
+      }
     }
 
     &__text {

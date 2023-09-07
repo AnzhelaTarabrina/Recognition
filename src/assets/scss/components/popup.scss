@@ -51,11 +51,19 @@
     &:not(:first-child) {
       margin-top: 16px;
     }
+
+    &--px-20 {
+      padding: 0 20px;
+    }
   }
 
   &__btns {
     margin-top: 36px;
     display: flex;
+
+    &--mt-20 {
+      margin-top: 20px;
+    }
   }
 
   &__btn {
@@ -181,6 +189,10 @@
     padding: 36px 10px 10px;
     width: 286px;
     background: linear-gradient(0deg, rgba($color-third, 0.15), rgba($color-third, 0.15)), #FFFFFF;
+  }
+  
+  &--hide-resume &__content {
+    padding-top: 20px;
   }
   
   &--admin {

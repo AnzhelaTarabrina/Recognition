@@ -124,6 +124,23 @@
     }
   }
 
+  &--lock {
+    &:after {
+      content: '';
+      width: 10px;
+      height: 11px;
+      top: 9px;
+      right: 7px;
+      font-size: 12px;
+      transform: translateY(0);
+      color: $color-gray;
+      background-image: url(../img/icons/lock.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
   &--arrow-r-20 {
     &:after {
       right: 20px;
