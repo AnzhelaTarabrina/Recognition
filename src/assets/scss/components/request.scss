@@ -1,6 +1,11 @@
 .request {
+  padding-bottom: 20px;
   &__breadcrumbs {
     margin-bottom: 35px;
+
+    &--mb-15 {
+      margin-bottom: 15px;
+    }
   }
 
   &__mobile-title {
@@ -16,6 +21,10 @@
   &__text {
     margin-bottom: 4px;
     line-height: 1.5;
+  }
+
+  &__descr {
+    margin-bottom: 17px;
   }
 
   &__area {
@@ -83,6 +92,11 @@
       padding-top: 74px;
       margin-bottom: 15px;
       display: block;
+
+      &--mb-5 {
+        margin-bottom: 5px;
+        line-height: 1.5;
+      }
     }
 
     &__form {

@@ -73,6 +73,14 @@
       }
     }
   }
+
+  &--initial &__link,
+  &--initial &__current {
+    &:after {
+      top: initial;
+      transform: translateY(0);
+    }
+  }
 }
 
 @include media_max_width(680px) {
