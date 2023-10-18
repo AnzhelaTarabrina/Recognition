@@ -125,6 +125,7 @@ const htmlPageNames = [
 	'response-and-resume',
 	'my-tasks',
 	'my-task',
+	'bot',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
