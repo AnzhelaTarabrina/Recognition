@@ -22,6 +22,18 @@
     line-height: 1.22;
     color: #fff;
 
+    &-row {
+      margin-left: -5px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    &-icon {
+      flex-shrink: 0;
+      width: 16px;
+    }
+
     &--pink {
       color: #ec008c;
     }
@@ -29,6 +41,10 @@
     &--danger {
       color: $color-danger;
     }
+  }
+
+  &__text {
+    line-height: 1.3;
   }
 
   &__circle {
