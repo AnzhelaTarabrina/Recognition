@@ -2,6 +2,10 @@
   .ratings {
     &__team {
       padding-top: 115px;
+
+      &--pt-49 {
+        padding-top: 49px;
+      }
     }
   }
 }

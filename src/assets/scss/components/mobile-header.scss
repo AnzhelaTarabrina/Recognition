@@ -61,6 +61,10 @@
       width: 100%;
     }
   }
+
+  &--not-shadow {
+    box-shadow: none;
+  }
 }
 
 @include media_max_width(680px) {
