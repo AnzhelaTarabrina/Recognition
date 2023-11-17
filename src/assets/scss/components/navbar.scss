@@ -81,6 +81,14 @@
   }
 }
 
+@include media_max_width(1200px) {
+  .navbar {
+    &__link {
+      width: 146px;
+    }
+  }
+}
+
 @include media_max_width(991px) {
   .navbar {
     &__link {

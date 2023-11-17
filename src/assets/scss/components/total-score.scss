@@ -1,0 +1,36 @@
+.total-score {
+  display: none;
+}
+
+@include media_max_width(680px) {
+  .total-score {
+    padding: 12px 27px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #0086CE;
+    gap: 15px;
+
+    &__title {
+      color: #FFF;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      width: 50px;
+    }
+    
+    &__icon {
+      display: flex;
+
+      &::after {
+        color: #FFF;
+        margin-left: 0;
+        margin-bottom: 4px;
+      }
+    }
+
+    &--mb-20 {
+      margin-bottom: 20px;
+    }
+  }
+}

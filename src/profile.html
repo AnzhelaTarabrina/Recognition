@@ -16,6 +16,18 @@
 				<a class="logo header__logo" href="index.html">
 					<img class="logo__img" src="assets/img/logo-white.svg" alt="">
 				</a>
+				<div class="counter-heart header__counter js-open-popup" data-popup-name="counter-popup">
+					<div class="counter-heart__body">
+						<div class="counter-heart__body-item">1</div>
+						<div class="counter-heart__body-item">7</div>
+						<div class="counter-heart__body-item">8</div>
+						<div class="counter-heart__body-item">9</div>
+						<div class="counter-heart__body-item">0</div>
+						<div class="counter-heart__body-item">0</div>
+						<div class="counter-heart__body-item">2</div>
+					</div>
+					<div class="price counter-heart__icon"></div>
+				</div>
 				<div class="navbar header__navbar">
 					<ul class="navbar__list">
 						<li class="navbar__item navbar__item--active">
@@ -49,6 +61,21 @@
 	</header>
 
 	<main class="main">
+		<div class="total-score js-open-popup" data-popup-name="counter-popup">
+			<div class="total-score__title">
+				<div class="price total-score__icon"></div>
+				total score
+			</div>
+			<div class="counter-flip total-score__counter">
+				<div class="counter-flip__item"><span>1</span></div>
+				<div class="counter-flip__item"><span>7</span></div>
+				<div class="counter-flip__item"><span>0</span></div>
+				<div class="counter-flip__item"><span>1</span></div>
+				<div class="counter-flip__item"><span>3</span></div>
+				<div class="counter-flip__item"><span>0</span></div>
+				<div class="counter-flip__item"><span>9</span></div>
+			</div>
+		</div>
 		<div class="profile profile--own">
 			<div class="container">
 				<div class="profile__header">
@@ -568,6 +595,32 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="popup counter-popup" data-popup-name="counter-popup">
+		<div class="popup__content counter-popup__content">
+			<div class="counter-popup__body">
+				<img class="counter-popup__logo" src="assets/img/logo-white.svg" alt="">
+				<div class="counter counter-popup__counter">
+					<div class="counter__item"><span>1</span></div>
+					<div class="counter__item"><span>7</span></div>
+					<div class="counter__item"><span>0</span></div>
+					<div class="counter__item"><span>1</span></div>
+					<div class="counter__item"><span>3</span></div>
+					<div class="counter__item"><span>0</span></div>
+					<div class="counter__item"><span>9</span></div>
+				</div>
+				<div class="counter-popup__title">
+					total
+					<span class="price counter-popup__icon"></span>
+					score
+				</div>
+				<p class="text counter-popup__text">
+					*количество отправленных признаний на данный момент*
+				</p>
+			</div>
+			<button class="icon icon-close icon--white popup__close popup__close--offset-20 js-close-popup"></button>
 		</div>
 	</div>
 
