@@ -36,6 +36,7 @@ const htmlPageNames = [
 	'my-team',
 	'my-team-banner',
 	'ratings',
+	'ratings-recognitions',
 	'other-profile',
 	'settings',
 	'settings-body-desktop',
