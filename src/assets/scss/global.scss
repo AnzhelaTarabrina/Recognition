@@ -277,6 +277,13 @@
   }
 }
 
+.marker-up {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @include icon('../img/icons/marker-up.png', 20px, 20px);
+}
+
 .swiper-pagination-bullets {
   display: flex;
   justify-content: center;
