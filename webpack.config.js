@@ -127,6 +127,9 @@ const htmlPageNames = [
 	'my-tasks',
 	'my-task',
 	'bot',
+	'map-development',
+	'step-details',
+	'take-office',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
