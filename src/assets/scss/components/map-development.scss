@@ -1,0 +1,121 @@
+.map-development {
+  overflow-x: hidden;
+
+  &__container {
+    padding: 30px 40px 40px;
+    max-width: 1076px;
+  }
+
+  &__top {
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &__steps {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__steps-bg {
+    display: none;
+  }
+
+  &__close {
+    font-size: 20px;
+    line-height: 1;
+    color: #000;
+  }
+}
+@include media_max_width(1080px) {
+  .map-development {
+    &__top {
+      padding: 0;
+    }
+
+    &__steps {
+      margin-top: 33px;
+    }
+
+    &__steps-bg {
+      position: relative;
+      display: block;
+      height: 153px; 
+
+      &-left {
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        height: 100%;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 200%;
+          left: 0;
+          bottom: 0;
+          border-radius: 0 0 0 160px;
+          background: #95339E;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 53%;
+          height: 10px;
+          top: 0;
+          right: 0;
+          border-radius: 30px 0 0 30px;
+          background-color: #fef1d9;
+          z-index: 2;
+          transform: translateY(-50%);
+        }
+      }
+
+      &-right {
+        position: absolute;
+        width: 50vw;
+        height: 148px;
+        top: 5px;
+        left: 50%;
+        background: linear-gradient(90deg, #95339E 30%, #CE0063 100%);
+      }
+    }
+  }
+}
+@include media_max_width(680px) {
+  .map-development {
+    &__container {
+      padding: 15px 10px 40px;
+    }
+    &__top {
+      padding: 0 10px;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    &__steps {
+      margin-top: 15px;
+    }
+
+    &__steps-bg {
+      display: none;
+    }
+
+    &__close {
+      color: #E50C31;
+    }
+  }
+}
