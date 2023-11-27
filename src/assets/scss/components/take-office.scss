@@ -1,0 +1,49 @@
+.take-office {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  &__title {
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__sub-title {
+    margin-top: 10px;
+  }
+
+  &__users {
+    margin-top: 25px;
+  }
+  &__user {
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  &__bottom {
+    margin-top: 20px;
+  }
+
+  &__btn {
+    font-weight: 500;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@include media_max_width(680px) {
+  .take-office {
+    padding-bottom: 40px;
+  }
+}
