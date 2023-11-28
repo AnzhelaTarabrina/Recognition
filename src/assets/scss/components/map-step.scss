@@ -508,7 +508,7 @@
       gap: 13px;
       position: absolute;
       top: 0;
-      right: 15px;
+      right: 85px;
       transform: translateY(-50%);
       z-index: 6;
 
@@ -521,17 +521,34 @@
       &--reverse {
         flex-direction: row-reverse;
         right: initial;
-        left: 15px;
+        left: 85px;
       }
     }
 
     &__btn {
       padding: 4px 9px;
     }
+
+    &--first,
+    &--third,
+    &--fifth,
+    &--seventh {
+      .map-step__content {
+        padding: 20px 20px 43px 110px;
+      }
+    }
+  
+    &--second,
+    &--fourth,
+    &--sixth,
+    &--eighth {
+      .map-step__content {
+        padding: 20px 110px 43px 20px;
+      }
+    } 
   
     &--first {
       .map-step__content {
-        padding: 20px 20px 45px 40px;
         flex-direction: row;
 
         &::before {
@@ -551,7 +568,6 @@
   
     &--second {
       .map-step__content {
-        padding: 20px 40px 43px 20px;
         flex-direction: row-reverse;
   
         &::before {
@@ -572,8 +588,6 @@
 
     &--third {
       .map-step__content {
-        padding: 20px 20px 45px 40px;
-  
         &::before {
           width: 100%;
           height: 100%;
@@ -584,8 +598,6 @@
   
     &--fourth {
       .map-step__content {
-        padding: 20px 40px 43px 20px;
-  
         &::before {
           width: 100%;
           height: 100%;
@@ -596,7 +608,6 @@
   
     &--fifth {
       .map-step__content {
-        padding: 20px 20px 43px 40px;
         flex-direction: row;
 
         &::before {
@@ -617,7 +628,6 @@
   
     &--sixth {
       .map-step__content {
-        padding: 20px 40px 43px 20px;
         flex-direction: row-reverse;
   
         &::before {
@@ -638,8 +648,6 @@
   
     &--seventh {
       .map-step__content {
-        padding: 20px 20px 43px 40px;
-  
         &::before {
           width: 100%;
           height: 100%;
@@ -650,7 +658,6 @@
   
     &--eighth {
       .map-step__content {
-        padding: 20px 40px 45px 20px;
         overflow: visible;
   
         &::before {
@@ -667,5 +674,36 @@
         transform: translateY(-30px);
       }
     }
+  }
+}
+
+@include media_max_width(500px) {
+  .map-step {
+    &__btn-mobile {
+      right: 15px;
+
+      &--reverse {
+        right: initial;
+        left: 15px;
+      }
+    }
+
+    &--first,
+    &--third,
+    &--fifth,
+    &--seventh {
+      .map-step__content {
+        padding: 20px 20px 43px 40px;
+      }
+    }
+  
+    &--second,
+    &--fourth,
+    &--sixth,
+    &--eighth {
+      .map-step__content {
+        padding: 20px 40px 43px 20px;
+      }
+    } 
   }
 }
