@@ -1,0 +1,51 @@
+.randomizer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    max-width: 1200px;
+  }
+  
+  &__item {
+    padding: 50px 20px 60px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      padding-bottom: 16px;
+    }
+
+    &-numbers {
+      max-width: 960px;
+      text-align: center;
+      font-size: 24px;
+      line-height: 1.3;
+      font-weight: 300;
+
+      span {
+        display: inline-flex;
+
+        &:not(:last-child) {
+          &::after {
+            content: ",";
+          }
+        }
+      }
+    }
+
+    &-btn {
+      margin-top: 15px;
+      max-width: 480px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}
