@@ -15,6 +15,12 @@
     background-color: #fff;
   }
 
+  &--snow {
+    overflow-x: hidden;
+    background-color: $color-primary;
+    background-image: url('../img/bg-snow.svg');
+  }
+
   &--desktop {
     min-width: $body-desktop-width;
 
