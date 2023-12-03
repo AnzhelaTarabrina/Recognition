@@ -273,6 +273,10 @@
 
     &__menu {
       margin-top: 10px;
+
+      &--mobile-none {
+        display: none;
+      }
     }
 
     &__info {
