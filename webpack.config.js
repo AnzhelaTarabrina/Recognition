@@ -32,6 +32,7 @@ const htmlPageNames = [
 	'profile',
 	'profile-banner',
 	'profile-button',
+	'profile-lottery',
 	'payment-feed',
 	'my-team',
 	'my-team-banner',
@@ -130,6 +131,8 @@ const htmlPageNames = [
 	'map-development',
 	'step-details',
 	'take-office',
+	'randomizer',
+	'lottery',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({

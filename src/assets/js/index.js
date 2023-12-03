@@ -18,3 +18,4 @@ import './admin-menu.js';
 import './awards-row.js';
 import './images-slider.js';
 import './bot-slider.js';
+import './explosion.js';
